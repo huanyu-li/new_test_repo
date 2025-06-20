@@ -1,0 +1,1101 @@
+@prefix badmintonto: <http://w3id.org/BadmintONTO/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <http://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/match_datetime_description/1> a badmintonto:MatchDateTimeDescription;
+  time:day "10";
+  time:month "11";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/10> a badmintonto:MatchDateTimeDescription;
+  time:day "19";
+  time:month "5";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/11> a badmintonto:MatchDateTimeDescription;
+  time:day "19";
+  time:month "7";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/12> a badmintonto:MatchDateTimeDescription;
+  time:day "25";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/13> a badmintonto:MatchDateTimeDescription;
+  time:day "12";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/14> a badmintonto:MatchDateTimeDescription;
+  time:day "17";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/15> a badmintonto:MatchDateTimeDescription;
+  time:day "19";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/16> a badmintonto:MatchDateTimeDescription;
+  time:day "18";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/17> a badmintonto:MatchDateTimeDescription;
+  time:day "10";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/18> a badmintonto:MatchDateTimeDescription;
+  time:day "13";
+  time:month "3";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/19> a badmintonto:MatchDateTimeDescription;
+  time:day "10";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/2> a badmintonto:MatchDateTimeDescription;
+  time:day "13";
+  time:month "12";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/20> a badmintonto:MatchDateTimeDescription;
+  time:day "11";
+  time:month "1";
+  time:year "2020" .
+
+<http://example.com/match_datetime_description/21> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/22> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/23> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/24> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/25> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/26> a badmintonto:MatchDateTimeDescription;
+  time:day "15";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/27> a badmintonto:MatchDateTimeDescription;
+  time:day "16";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/28> a badmintonto:MatchDateTimeDescription;
+  time:day "17";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/29> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/3> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "9";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/30> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/31> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/32> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/33> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/34> a badmintonto:MatchDateTimeDescription;
+  time:day "22";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/35> a badmintonto:MatchDateTimeDescription;
+  time:day "23";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/36> a badmintonto:MatchDateTimeDescription;
+  time:day "23";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/37> a badmintonto:MatchDateTimeDescription;
+  time:day "24";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/38> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/39> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/4> a badmintonto:MatchDateTimeDescription;
+  time:day "17";
+  time:month "10";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/40> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/41> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/42> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/43> a badmintonto:MatchDateTimeDescription;
+  time:day "30";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/44> a badmintonto:MatchDateTimeDescription;
+  time:day "31";
+  time:month "1";
+  time:year "2021" .
+
+<http://example.com/match_datetime_description/5> a badmintonto:MatchDateTimeDescription;
+  time:day "11";
+  time:month "11";
+  time:year "2018" .
+
+<http://example.com/match_datetime_description/6> a badmintonto:MatchDateTimeDescription;
+  time:day "21";
+  time:month "10";
+  time:year "2018" .
+
+<http://example.com/match_datetime_description/7> a badmintonto:MatchDateTimeDescription;
+  time:day "29";
+  time:month "6";
+  time:year "2018" .
+
+<http://example.com/match_datetime_description/8> a badmintonto:MatchDateTimeDescription;
+  time:day "9";
+  time:month "11";
+  time:year "2019" .
+
+<http://example.com/match_datetime_description/9> a badmintonto:MatchDateTimeDescription;
+  time:day "24";
+  time:month "5";
+  time:year "2019" .
+
+<http://example.com/match_duration_description/1> a badmintonto:MatchDurationDescription;
+  time:minutes 83.0 .
+
+<http://example.com/match_duration_description/10> a badmintonto:MatchDurationDescription;
+  time:minutes 41.0 .
+
+<http://example.com/match_duration_description/11> a badmintonto:MatchDurationDescription;
+  time:minutes 76.0 .
+
+<http://example.com/match_duration_description/12> a badmintonto:MatchDurationDescription;
+  time:minutes 37.0 .
+
+<http://example.com/match_duration_description/13> a badmintonto:MatchDurationDescription;
+  time:minutes 54.0 .
+
+<http://example.com/match_duration_description/14> a badmintonto:MatchDurationDescription;
+  time:minutes 68.0 .
+
+<http://example.com/match_duration_description/15> a badmintonto:MatchDurationDescription;
+  time:minutes 71.0 .
+
+<http://example.com/match_duration_description/16> a badmintonto:MatchDurationDescription;
+  time:minutes 43.0 .
+
+<http://example.com/match_duration_description/17> a badmintonto:MatchDurationDescription;
+  time:minutes 65.0 .
+
+<http://example.com/match_duration_description/18> a badmintonto:MatchDurationDescription;
+  time:minutes 40.0 .
+
+<http://example.com/match_duration_description/19> a badmintonto:MatchDurationDescription;
+  time:minutes 68.0 .
+
+<http://example.com/match_duration_description/2> a badmintonto:MatchDurationDescription;
+  time:minutes 52.0 .
+
+<http://example.com/match_duration_description/20> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/21> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/22> a badmintonto:MatchDurationDescription;
+  time:minutes 45.0 .
+
+<http://example.com/match_duration_description/23> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/24> a badmintonto:MatchDurationDescription;
+  time:minutes 66.0 .
+
+<http://example.com/match_duration_description/25> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/26> a badmintonto:MatchDurationDescription;
+  time:minutes 40.0 .
+
+<http://example.com/match_duration_description/27> a badmintonto:MatchDurationDescription;
+  time:minutes 63.0 .
+
+<http://example.com/match_duration_description/28> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/29> a badmintonto:MatchDurationDescription;
+  time:minutes 44.0 .
+
+<http://example.com/match_duration_description/3> a badmintonto:MatchDurationDescription;
+  time:minutes 53.0 .
+
+<http://example.com/match_duration_description/30> a badmintonto:MatchDurationDescription;
+  time:minutes 81.0 .
+
+<http://example.com/match_duration_description/31> a badmintonto:MatchDurationDescription;
+  time:minutes 34.0 .
+
+<http://example.com/match_duration_description/32> a badmintonto:MatchDurationDescription;
+  time:minutes 77.0 .
+
+<http://example.com/match_duration_description/33> a badmintonto:MatchDurationDescription;
+  time:minutes 41.0 .
+
+<http://example.com/match_duration_description/34> a badmintonto:MatchDurationDescription;
+  time:minutes 38.0 .
+
+<http://example.com/match_duration_description/35> a badmintonto:MatchDurationDescription;
+  time:minutes 51.0 .
+
+<http://example.com/match_duration_description/36> a badmintonto:MatchDurationDescription;
+  time:minutes 45.0 .
+
+<http://example.com/match_duration_description/37> a badmintonto:MatchDurationDescription;
+  time:minutes 40.0 .
+
+<http://example.com/match_duration_description/38> a badmintonto:MatchDurationDescription;
+  time:minutes 55.0 .
+
+<http://example.com/match_duration_description/39> a badmintonto:MatchDurationDescription;
+  time:minutes 50.0 .
+
+<http://example.com/match_duration_description/4> a badmintonto:MatchDurationDescription;
+  time:minutes 54.0 .
+
+<http://example.com/match_duration_description/40> a badmintonto:MatchDurationDescription;
+  time:minutes 34.0 .
+
+<http://example.com/match_duration_description/41> a badmintonto:MatchDurationDescription;
+  time:minutes 65.0 .
+
+<http://example.com/match_duration_description/42> a badmintonto:MatchDurationDescription;
+  time:minutes 42.0 .
+
+<http://example.com/match_duration_description/43> a badmintonto:MatchDurationDescription;
+  time:minutes 40.0 .
+
+<http://example.com/match_duration_description/44> a badmintonto:MatchDurationDescription;
+  time:minutes 60.0 .
+
+<http://example.com/match_duration_description/5> a badmintonto:MatchDurationDescription;
+  time:minutes 67.0 .
+
+<http://example.com/match_duration_description/6> a badmintonto:MatchDurationDescription;
+  time:minutes 77.0 .
+
+<http://example.com/match_duration_description/7> a badmintonto:MatchDurationDescription;
+  time:minutes 53.0 .
+
+<http://example.com/match_duration_description/8> a badmintonto:MatchDurationDescription;
+  time:minutes 45.0 .
+
+<http://example.com/match_duration_description/9> a badmintonto:MatchDurationDescription;
+  time:minutes 36.0 .
+
+<http://example.com/match_event-1> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-1-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/1> .
+
+<http://example.com/match_event-1-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Fuzhou Open 2019";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-10> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-10-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/10> .
+
+<http://example.com/match_event-10-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Sudirman Cup 2019";
+  badmintonto:inStage badmintonto:Group-Stage;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-7> .
+
+<http://example.com/match_event-11> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-11-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/11> .
+
+<http://example.com/match_event-11-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Indonesia Open 2019";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-7> .
+
+<http://example.com/match_event-12> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-12-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/12> .
+
+<http://example.com/match_event-12-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Thailand Masters 2020";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-19> .
+
+<http://example.com/match_event-13> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-13-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/13> .
+
+<http://example.com/match_event-13-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Malaysia Masters 2020";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-14> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-14-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/14> .
+
+<http://example.com/match_event-14-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Indonesia Masters 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-2> .
+
+<http://example.com/match_event-15> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-15-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/15> .
+
+<http://example.com/match_event-15-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Indonesia Masters 2020";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-3> .
+
+<http://example.com/match_event-16> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-16-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/16> .
+
+<http://example.com/match_event-16-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Indonesia Masters 2020";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-3> .
+
+<http://example.com/match_event-17> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-17-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/17> .
+
+<http://example.com/match_event-17-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Malaysia Masters 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-19> .
+
+<http://example.com/match_event-18> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-18-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/18> .
+
+<http://example.com/match_event-18-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "All England Open 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-19> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-19-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/19> .
+
+<http://example.com/match_event-19-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Malaysia Masters 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-2> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-2-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/2> .
+
+<http://example.com/match_event-2-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "World Tour Finals";
+  badmintonto:inStage badmintonto:Group-Stage;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-6> .
+
+<http://example.com/match_event-20> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-20-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/20> .
+
+<http://example.com/match_event-20-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Malaysia Masters 2020";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-21> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-21-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/21> .
+
+<http://example.com/match_event-21-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-1> .
+
+<http://example.com/match_event-22> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-22-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/22> .
+
+<http://example.com/match_event-22-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-16> .
+
+<http://example.com/match_event-23> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-23-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/23> .
+
+<http://example.com/match_event-23-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-19> .
+
+<http://example.com/match_event-24> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-24-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/24> .
+
+<http://example.com/match_event-24-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-3> .
+
+<http://example.com/match_event-25> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-25-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/25> .
+
+<http://example.com/match_event-25-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-5> .
+
+<http://example.com/match_event-26> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-26-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/26> .
+
+<http://example.com/match_event-26-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-27> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-27-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/27> .
+
+<http://example.com/match_event-27-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-28> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-28-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/28> .
+
+<http://example.com/match_event-28-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "YONEX THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-29> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-29-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/29> .
+
+<http://example.com/match_event-29-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-1> .
+
+<http://example.com/match_event-3> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-3-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/3> .
+
+<http://example.com/match_event-3-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "KOREA OPEN 2019";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-30> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-30-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/30> .
+
+<http://example.com/match_event-30-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-2> .
+
+<http://example.com/match_event-31> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-31-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/31> .
+
+<http://example.com/match_event-31-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-5> .
+
+<http://example.com/match_event-32> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-32-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/32> .
+
+<http://example.com/match_event-32-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-9> .
+
+<http://example.com/match_event-33> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-33-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/33> .
+
+<http://example.com/match_event-33-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-34> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-34-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/34> .
+
+<http://example.com/match_event-34-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-23> .
+
+<http://example.com/match_event-35> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-35-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/35> .
+
+<http://example.com/match_event-35-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-5> .
+
+<http://example.com/match_event-36> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-36-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/36> .
+
+<http://example.com/match_event-36-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-9> .
+
+<http://example.com/match_event-37> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-37-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/37> .
+
+<http://example.com/match_event-37-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "TOYOTA THAILAND OPEN 2021";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-27> .
+
+<http://example.com/match_event-38> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-38-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/38> .
+
+<http://example.com/match_event-38-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-1> .
+
+<http://example.com/match_event-39> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-39-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/39> .
+
+<http://example.com/match_event-39-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-3> .
+
+<http://example.com/match_event-4> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-4-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/4> .
+
+<http://example.com/match_event-4-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Denmark Open 2019";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-6> .
+
+<http://example.com/match_event-40> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-40-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/40> .
+
+<http://example.com/match_event-40-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-8> .
+
+<http://example.com/match_event-41> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-41-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/41> .
+
+<http://example.com/match_event-41-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-19> .
+
+<http://example.com/match_event-42> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-42-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/42> .
+
+<http://example.com/match_event-42-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-21> .
+
+<http://example.com/match_event-43> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-43-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/43> .
+
+<http://example.com/match_event-43-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-5> .
+
+<http://example.com/match_event-44> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-44-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/44> .
+
+<http://example.com/match_event-44-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "HSBC BWF WORLD TOUR FINALS 2020";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-2> .
+
+<http://example.com/match_event-5> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-5-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/5> .
+
+<http://example.com/match_event-5-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Fuzhou Open 2018";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-6> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-6-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/6> .
+
+<http://example.com/match_event-6-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Denmark Open 2018";
+  badmintonto:inStage badmintonto:Finals;
+  badmintonto:setNumber "3";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-7> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-7-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/7> .
+
+<http://example.com/match_event-7-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Malaysia Open 2018";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-11> .
+
+<http://example.com/match_event-8> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-8-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/8> .
+
+<http://example.com/match_event-8-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Fuzhou Open 2019";
+  badmintonto:inStage badmintonto:Semi-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-7> .
+
+<http://example.com/match_event-9> a badmintonto:MatchEvent;
+  badmintonto:isDescribedBy <http://example.com/match_event-9-info>;
+  badmintonto:occursAtTime <http://example.com/match_time_entity/9> .
+
+<http://example.com/match_event-9-info> a badmintonto:MatchInformation;
+  badmintonto:hasMatchType badmintonto:Single;
+  badmintonto:inCompetition "Sudirman Cup 2019";
+  badmintonto:inStage badmintonto:Quarter-finals;
+  badmintonto:setNumber "2";
+  badmintonto:winByPlayer <http://example.com/player-7> .
+
+<http://example.com/match_time_entity/1> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/1>;
+  time:inDateTime <http://example.com/match_datetime_description/1> .
+
+<http://example.com/match_time_entity/10> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/10>;
+  time:inDateTime <http://example.com/match_datetime_description/10> .
+
+<http://example.com/match_time_entity/11> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/11>;
+  time:inDateTime <http://example.com/match_datetime_description/11> .
+
+<http://example.com/match_time_entity/12> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/12>;
+  time:inDateTime <http://example.com/match_datetime_description/12> .
+
+<http://example.com/match_time_entity/13> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/13>;
+  time:inDateTime <http://example.com/match_datetime_description/13> .
+
+<http://example.com/match_time_entity/14> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/14>;
+  time:inDateTime <http://example.com/match_datetime_description/14> .
+
+<http://example.com/match_time_entity/15> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/15>;
+  time:inDateTime <http://example.com/match_datetime_description/15> .
+
+<http://example.com/match_time_entity/16> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/16>;
+  time:inDateTime <http://example.com/match_datetime_description/16> .
+
+<http://example.com/match_time_entity/17> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/17>;
+  time:inDateTime <http://example.com/match_datetime_description/17> .
+
+<http://example.com/match_time_entity/18> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/18>;
+  time:inDateTime <http://example.com/match_datetime_description/18> .
+
+<http://example.com/match_time_entity/19> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/19>;
+  time:inDateTime <http://example.com/match_datetime_description/19> .
+
+<http://example.com/match_time_entity/2> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/2>;
+  time:inDateTime <http://example.com/match_datetime_description/2> .
+
+<http://example.com/match_time_entity/20> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/20>;
+  time:inDateTime <http://example.com/match_datetime_description/20> .
+
+<http://example.com/match_time_entity/21> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/21>;
+  time:inDateTime <http://example.com/match_datetime_description/21> .
+
+<http://example.com/match_time_entity/22> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/22>;
+  time:inDateTime <http://example.com/match_datetime_description/22> .
+
+<http://example.com/match_time_entity/23> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/23>;
+  time:inDateTime <http://example.com/match_datetime_description/23> .
+
+<http://example.com/match_time_entity/24> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/24>;
+  time:inDateTime <http://example.com/match_datetime_description/24> .
+
+<http://example.com/match_time_entity/25> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/25>;
+  time:inDateTime <http://example.com/match_datetime_description/25> .
+
+<http://example.com/match_time_entity/26> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/26>;
+  time:inDateTime <http://example.com/match_datetime_description/26> .
+
+<http://example.com/match_time_entity/27> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/27>;
+  time:inDateTime <http://example.com/match_datetime_description/27> .
+
+<http://example.com/match_time_entity/28> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/28>;
+  time:inDateTime <http://example.com/match_datetime_description/28> .
+
+<http://example.com/match_time_entity/29> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/29>;
+  time:inDateTime <http://example.com/match_datetime_description/29> .
+
+<http://example.com/match_time_entity/3> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/3>;
+  time:inDateTime <http://example.com/match_datetime_description/3> .
+
+<http://example.com/match_time_entity/30> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/30>;
+  time:inDateTime <http://example.com/match_datetime_description/30> .
+
+<http://example.com/match_time_entity/31> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/31>;
+  time:inDateTime <http://example.com/match_datetime_description/31> .
+
+<http://example.com/match_time_entity/32> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/32>;
+  time:inDateTime <http://example.com/match_datetime_description/32> .
+
+<http://example.com/match_time_entity/33> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/33>;
+  time:inDateTime <http://example.com/match_datetime_description/33> .
+
+<http://example.com/match_time_entity/34> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/34>;
+  time:inDateTime <http://example.com/match_datetime_description/34> .
+
+<http://example.com/match_time_entity/35> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/35>;
+  time:inDateTime <http://example.com/match_datetime_description/35> .
+
+<http://example.com/match_time_entity/36> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/36>;
+  time:inDateTime <http://example.com/match_datetime_description/36> .
+
+<http://example.com/match_time_entity/37> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/37>;
+  time:inDateTime <http://example.com/match_datetime_description/37> .
+
+<http://example.com/match_time_entity/38> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/38>;
+  time:inDateTime <http://example.com/match_datetime_description/38> .
+
+<http://example.com/match_time_entity/39> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/39>;
+  time:inDateTime <http://example.com/match_datetime_description/39> .
+
+<http://example.com/match_time_entity/4> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/4>;
+  time:inDateTime <http://example.com/match_datetime_description/4> .
+
+<http://example.com/match_time_entity/40> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/40>;
+  time:inDateTime <http://example.com/match_datetime_description/40> .
+
+<http://example.com/match_time_entity/41> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/41>;
+  time:inDateTime <http://example.com/match_datetime_description/41> .
+
+<http://example.com/match_time_entity/42> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/42>;
+  time:inDateTime <http://example.com/match_datetime_description/42> .
+
+<http://example.com/match_time_entity/43> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/43>;
+  time:inDateTime <http://example.com/match_datetime_description/43> .
+
+<http://example.com/match_time_entity/44> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/44>;
+  time:inDateTime <http://example.com/match_datetime_description/44> .
+
+<http://example.com/match_time_entity/5> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/5>;
+  time:inDateTime <http://example.com/match_datetime_description/5> .
+
+<http://example.com/match_time_entity/6> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/6>;
+  time:inDateTime <http://example.com/match_datetime_description/6> .
+
+<http://example.com/match_time_entity/7> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/7>;
+  time:inDateTime <http://example.com/match_datetime_description/7> .
+
+<http://example.com/match_time_entity/8> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/8>;
+  time:inDateTime <http://example.com/match_datetime_description/8> .
+
+<http://example.com/match_time_entity/9> a badmintonto:MacthTimeEntity;
+  time:hasDurationDescriprion <http://example.com/match_duration_description/9>;
+  time:inDateTime <http://example.com/match_datetime_description/9> .
+
+<http://example.com/player-1> a badmintonto:Player;
+  badmintonto:personFullName "An Se Young" .
+
+<http://example.com/player-10> a badmintonto:Player;
+  badmintonto:personFullName "Jonatan CHRISTIE" .
+
+<http://example.com/player-11> a badmintonto:Player;
+  badmintonto:personFullName "Kento MOMOTA" .
+
+<http://example.com/player-12> a badmintonto:Player;
+  badmintonto:personFullName "KIDAMBI Srikanth" .
+
+<http://example.com/player-13> a badmintonto:Player;
+  badmintonto:personFullName "LEE Cheuk Yiu" .
+
+<http://example.com/player-14> a badmintonto:Player;
+  badmintonto:personFullName "LEE Zii Jia" .
+
+<http://example.com/player-15> a badmintonto:Player;
+  badmintonto:personFullName "LIEW Daren" .
+
+<http://example.com/player-16> a badmintonto:Player;
+  badmintonto:personFullName "Mia BLICHFELDT" .
+
+<http://example.com/player-17> a badmintonto:Player;
+  badmintonto:personFullName "Michelle LI" .
+
+<http://example.com/player-18> a badmintonto:Player;
+  badmintonto:personFullName "Neslihan YIGIT" .
+
+<http://example.com/player-19> a badmintonto:Player;
+  badmintonto:personFullName "NG Ka Long Angus" .
+
+<http://example.com/player-2> a badmintonto:Player;
+  badmintonto:personFullName "Anders ANTONSEN" .
+
+<http://example.com/player-20> a badmintonto:Player;
+  badmintonto:personFullName "Pornpawee CHOCHUWONG" .
+
+<http://example.com/player-21> a badmintonto:Player;
+  badmintonto:personFullName "PUSARLA V. Sindhu" .
+
+<http://example.com/player-22> a badmintonto:Player;
+  badmintonto:personFullName "Rasmus GEMKE" .
+
+<http://example.com/player-23> a badmintonto:Player;
+  badmintonto:personFullName "Ratchanok INTANON" .
+
+<http://example.com/player-24> a badmintonto:Player;
+  badmintonto:personFullName "Sameer VERMA" .
+
+<http://example.com/player-25> a badmintonto:Player;
+  badmintonto:personFullName "SHI Yuqi" .
+
+<http://example.com/player-26> a badmintonto:Player;
+  badmintonto:personFullName "Supanida KATETHONG" .
+
+<http://example.com/player-27> a badmintonto:Player;
+  badmintonto:personFullName "Viktor AXELSEN" .
+
+<http://example.com/player-3> a badmintonto:Player;
+  badmintonto:personFullName "Anthony Sinisuka GINTING" .
+
+<http://example.com/player-4> a badmintonto:Player;
+  badmintonto:personFullName "Busanan ONGBAMRUNGPHAN" .
+
+<http://example.com/player-5> a badmintonto:Player;
+  badmintonto:personFullName "Carolina MARIN" .
+
+<http://example.com/player-6> a badmintonto:Player;
+  badmintonto:personFullName "CHEN Long" .
+
+<http://example.com/player-7> a badmintonto:Player;
+  badmintonto:personFullName "CHOU Tien Chen" .
+
+<http://example.com/player-8> a badmintonto:Player;
+  badmintonto:personFullName "Evgeniya KOSETSKAYA" .
+
+<http://example.com/player-9> a badmintonto:Player;
+  badmintonto:personFullName "Hans-Kristian Solberg VITTINGHUS" .

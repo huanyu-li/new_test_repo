@@ -1,0 +1,627 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix badmintonto: <http://w3id.org/BadmintONTO/>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@base <http://example.com/>.
+
+# set source
+<set1_source>
+    rml:source "./ShuttleSet/match_1/set1-new.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally sourrce
+<set1_rally_source>
+    rml:source "./ShuttleSet/match_1/set1_rally.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally event
+<set1_rally_event_mapping>
+    rml:logicalSource <set1_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/rally_event-{rally}";
+        rr:class badmintonto:RallyEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSubEvent;
+        rr:objectMap [
+            rr:parentTriplesMap <set1_shot_event_mapping>;
+                rr:joinCondition [
+                    rr:child "rally";
+                    rr:parent "rally";
+                ];
+            ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set1_rally_information_mapping>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSuperEvent;
+        rr:objectMap [
+            rr:template "http://example.com/match_1/set_event-1";
+        ]
+    ]
+.
+
+# rally information
+<set1_rally_information_mapping>
+    rml:logicalSource <set1_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/rally_event-{rally}-info";
+        rr:class badmintonto:RallyInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyWinReason;
+        rr:objectMap [
+            rml:reference "win_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyLoseReason;
+        rr:objectMap [
+            rml:reference "lose_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shotNumber;
+        rr:objectMap [
+            rml:reference "ball_round";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:getPointByPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ]
+.
+
+# shot event
+<set1_shot_event_mapping>
+    rml:logicalSource <set1_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/shot_event-{rally}-{ball_round}";
+        rr:class badmintonto:StrokeEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set1_shot_information_mapping>;
+        ]
+    ]
+.
+  
+# shot information
+<set1_shot_information_mapping>
+    rml:logicalSource <set1_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/shot_event-{rally}-{ball_round}-info";
+        rr:class badmintonto:ShotInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:receivingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{opponent}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hittingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasShotType;
+        rr:objectMap [
+            rr:template "http://example.com/shot-type/{type}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleHitLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set1_shuttle_hitting_location>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleLandingLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set1_shuttle_landing_location>;
+        ]
+    ]
+.
+
+# shuttle hitting location
+<set1_shuttle_hitting_location>
+    rml:logicalSource <set1_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/shuttle_hitting_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{player_location_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({hit_x}, {hit_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.
+
+# shullte landing location
+<set1_shuttle_landing_location>
+    rml:logicalSource <set1_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-1/shuttle_landing_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{landing_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({landing_x}, {landing_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.
+
+
+# set source
+<set2_source>
+    rml:source "./ShuttleSet/match_1/set2-new.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally sourrce
+<set2_rally_source>
+    rml:source "./ShuttleSet/match_1/set2_rally.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally event
+<set2_rally_event_mapping>
+    rml:logicalSource <set2_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/rally_event-{rally}";
+        rr:class badmintonto:RallyEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSubEvent;
+        rr:objectMap [
+            rr:parentTriplesMap <set2_shot_event_mapping>;
+                rr:joinCondition [
+                    rr:child "rally";
+                    rr:parent "rally";
+                ];
+            ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set2_rally_information_mapping>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSuperEvent;
+        rr:objectMap [
+            rr:template "http://example.com/match_1/set_event-1";
+        ]
+    ]
+.
+
+# rally information
+<set2_rally_information_mapping>
+    rml:logicalSource <set2_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/rally_event-{rally}-info";
+        rr:class badmintonto:RallyInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyWinReason;
+        rr:objectMap [
+            rml:reference "win_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyLoseReason;
+        rr:objectMap [
+            rml:reference "lose_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shotNumber;
+        rr:objectMap [
+            rml:reference "ball_round";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:getPointByPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ]
+.
+
+# shot event
+<set2_shot_event_mapping>
+    rml:logicalSource <set2_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/shot_event-{rally}-{ball_round}";
+        rr:class badmintonto:StrokeEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set2_shot_information_mapping>;
+        ]
+    ]
+.
+  
+# shot information
+<set2_shot_information_mapping>
+    rml:logicalSource <set2_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/shot_event-{rally}-{ball_round}-info";
+        rr:class badmintonto:ShotInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:receivingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{opponent}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hittingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasShotType;
+        rr:objectMap [
+            rr:template "http://example.com/shot-type/{type}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleHitLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set2_shuttle_hitting_location>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleLandingLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set2_shuttle_landing_location>;
+        ]
+    ]
+.
+
+# shuttle hitting location
+<set2_shuttle_hitting_location>
+    rml:logicalSource <set2_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/shuttle_hitting_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{player_location_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({hit_x}, {hit_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.
+
+# shullte landing location
+<set2_shuttle_landing_location>
+    rml:logicalSource <set2_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-2/shuttle_landing_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{landing_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({landing_x}, {landing_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.
+
+
+# set source
+<set3_source>
+    rml:source "./ShuttleSet/match_1/set3-new.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally sourrce
+<set3_rally_source>
+    rml:source "./ShuttleSet/match_1/set3_rally.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+# rally event
+<set3_rally_event_mapping>
+    rml:logicalSource <set3_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/rally_event-{rally}";
+        rr:class badmintonto:RallyEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSubEvent;
+        rr:objectMap [
+            rr:parentTriplesMap <set3_shot_event_mapping>;
+                rr:joinCondition [
+                    rr:child "rally";
+                    rr:parent "rally";
+                ];
+            ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set3_rally_information_mapping>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSuperEvent;
+        rr:objectMap [
+            rr:template "http://example.com/match_1/set_event-1";
+        ]
+    ]
+.
+
+# rally information
+<set3_rally_information_mapping>
+    rml:logicalSource <set3_rally_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/rally_event-{rally}-info";
+        rr:class badmintonto:RallyInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyWinReason;
+        rr:objectMap [
+            rml:reference "win_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:rallyLoseReason;
+        rr:objectMap [
+            rml:reference "lose_reason";
+            rr:datatype xsd:string
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shotNumber;
+        rr:objectMap [
+            rml:reference "ball_round";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:getPointByPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ]
+.
+
+# shot event
+<set3_shot_event_mapping>
+    rml:logicalSource <set3_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/shot_event-{rally}-{ball_round}";
+        rr:class badmintonto:StrokeEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <set3_shot_information_mapping>;
+        ]
+    ]
+.
+  
+# shot information
+<set3_shot_information_mapping>
+    rml:logicalSource <set3_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/shot_event-{rally}-{ball_round}-info";
+        rr:class badmintonto:ShotInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreA;
+        rr:objectMap [
+            rml:reference "roundscore_A";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:roundScoreB;
+        rr:objectMap [
+            rml:reference "roundscore_B";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:receivingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{opponent}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hittingPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasShotType;
+        rr:objectMap [
+            rr:template "http://example.com/shot-type/{type}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleHitLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set3_shuttle_hitting_location>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:shuttleLandingLocation;
+        rr:objectMap [
+            rr:parentTriplesMap <set3_shuttle_landing_location>;
+        ]
+    ]
+.
+
+# shuttle hitting location
+<set3_shuttle_hitting_location>
+    rml:logicalSource <set3_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/shuttle_hitting_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{player_location_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({hit_x}, {hit_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.
+
+# shullte landing location
+<set3_shuttle_landing_location>
+    rml:logicalSource <set3_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set-3/shuttle_landing_location/{rally}-{ball_round}";
+        rr:class badmintonto:ShotLocation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:atCourtArea;
+        rr:objectMap [
+            rr:template "http://example.com/courtArea/{landing_area}";
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:asWKT;
+        rr:objectMap [
+            rr:template "POSITION ({landing_x}, {landing_y})";
+            rr:datatype geosparql:wktLiteral
+        ]
+    ]
+.

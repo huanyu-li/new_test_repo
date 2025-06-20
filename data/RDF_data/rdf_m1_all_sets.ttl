@@ -1,0 +1,60 @@
+@prefix badmintonto: <http://w3id.org/BadmintONTO/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <http://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/match_1/set_event-1> a badmintonto:SetEvent;
+  badmintonto:hasSuperEvent <http://example.com/match_event-1>;
+  badmintonto:isDescribedBy <http://example.com/match_1/set_event_1-info> .
+
+<http://example.com/match_1/set_event-2> a badmintonto:SetEvent;
+  badmintonto:hasSuperEvent <http://example.com/match_event-1>;
+  badmintonto:isDescribedBy <http://example.com/match_1/set_event_2-info> .
+
+<http://example.com/match_1/set_event-3> a badmintonto:SetEvent;
+  badmintonto:hasSuperEvent <http://example.com/match_event-1>;
+  badmintonto:isDescribedBy <http://example.com/match_1/set_event_3-info> .
+
+<http://example.com/match_1/set_event_1-info> a badmintonto:SetInformation;
+  badmintonto:getSetByPlayer <http://example.com/player-11>;
+  badmintonto:hasRoleA <http://example.com/match_1/set_event_1-role-A>;
+  badmintonto:hasRoleB <http://example.com/match_1/set_event_1-role-B>;
+  badmintonto:setScoreA "1"^^xsd:nonNegativeInteger;
+  badmintonto:setScoreB "0"^^xsd:nonNegativeInteger .
+
+<http://example.com/match_1/set_event_1-role-A> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-11> .
+
+<http://example.com/match_1/set_event_1-role-B> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-7> .
+
+<http://example.com/match_1/set_event_2-info> a badmintonto:SetInformation;
+  badmintonto:getSetByPlayer <http://example.com/player-7>;
+  badmintonto:hasRoleA <http://example.com/match_1/set_event_2-role-A>;
+  badmintonto:hasRoleB <http://example.com/match_1/set_event_2-role-B>;
+  badmintonto:setScoreA "1"^^xsd:nonNegativeInteger;
+  badmintonto:setScoreB "1"^^xsd:nonNegativeInteger .
+
+<http://example.com/match_1/set_event_2-role-A> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-11> .
+
+<http://example.com/match_1/set_event_2-role-B> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-7> .
+
+<http://example.com/match_1/set_event_3-info> a badmintonto:SetInformation;
+  badmintonto:getSetByPlayer <http://example.com/player-11>;
+  badmintonto:hasRoleA <http://example.com/match_1/set_event_3-role-A>;
+  badmintonto:hasRoleB <http://example.com/match_1/set_event_3-role-B>;
+  badmintonto:setScoreA "2"^^xsd:nonNegativeInteger;
+  badmintonto:setScoreB "1"^^xsd:nonNegativeInteger .
+
+<http://example.com/match_1/set_event_3-role-A> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-11> .
+
+<http://example.com/match_1/set_event_3-role-B> a badmintonto:SinglePlayerRole;
+  badmintonto:isPerformedBy <http://example.com/player-7> .

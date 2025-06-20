@@ -1,0 +1,347 @@
+<html>
+    <head>
+        <title>
+            OOPS! Report Summary
+        </title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/dataTables.bootstrap5.css" rel="stylesheet"/>
+        <script src="js/jquery-3.7.1.js">
+        </script>
+        <script src="js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/dataTables.js">
+        </script>
+        <script src="js/dataTables.bootstrap5.js">
+        </script>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <script>
+        window.onload = () => {
+                    $('#oops-table thead tr')
+                        .clone(true)
+                        .addClass('filters')
+                        .appendTo('#oops-table thead');
+                        
+                    let table = $('#oops-table').DataTable({
+                            orderCellsTop: true,
+                            pageLength: 50,
+                            initComplete: function () {
+                                let api = this.api();
+                    
+                                // For each column
+                                api
+                                    .columns()
+                                    .eq(0)
+                                    .each(function (colIdx) {
+                                        // Set the header cell to contain the input element
+                                        let cell = $('.filters th').eq(
+                                            $(api.column(colIdx).header()).index()
+                                        );
+                                        let title = $(cell).text().trim();
+                                        $(cell).html('<input type="text" placeholder="' + title + '" />');
+                    
+                                        // On every keypress in this input
+                                        $(
+                                            'input',
+                                            $('.filters th').eq($(api.column(colIdx).header()).index())
+                                        )
+                                            .off('keyup change')
+                                            .on('change', function (e) {
+                                                // Get the search value
+                                                $(this).attr('title', $(this).val());
+                                                let regexr = '({search})'; //$(this).parents('th').find('select').val();
+                    
+                                                let cursorPosition = this.selectionStart;
+                                                // Search the column for that value
+                                                api
+                                                    .column(colIdx)
+                                                    .search(
+                                                        this.value != ''
+                                                            ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                                            : '',
+                                                        this.value != '',
+                                                        this.value == ''
+                                                    )
+                                                    .draw();
+                                            })
+                                            .on('keyup', function (e) {
+                                                e.stopPropagation();
+                    
+                                                $(this).trigger('change');
+                                                $(this)
+                                                    .focus()[0]
+                                                    .setSelectionRange(cursorPosition, cursorPosition);
+                                            });
+                                    });
+                            },
+                        });
+                }
+    </script>
+    <body>
+        <h1>
+            OOPS! Report Summary
+        </h1>
+        <table class="table table-striped table-hover dataTable" id="oops-table" width="100%">
+            <thead>
+                <tr>
+                    <th>
+                        Module
+                    </th>
+                    <th>
+                        Pitfall Name
+                    </th>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Level
+                    </th>
+                    <th>
+                        Affected Elements
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title='This pitfall occurs if file extensions such as ".owl", ".rdf", ".ttl", ".n3" and ".rdfxml" are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	'>
+                        URI contains file extension
+                    </td>
+                    <td>
+                        P36
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        https://huanyu-li.github.io/BadmintONTO/0.1/BadmintONTO.ttl
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	">
+                        Inverse relationships not explicitly declared
+                    </td>
+                    <td>
+                        P13
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="Two classes are defined as equivalent, using owl:equivalentClass, when they are not necessarily equivalent.	">
+                        Defining wrong equivalent classes
+                    </td>
+                    <td>
+                        P31
+                    </td>
+                    <td>
+                        Critical
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="An ontology element (a class, an object property or a datatype property) is used in its own definition. Some examples of this would be: (a) the definition of a class as the enumeration of several classes including itself;  (b) the appearance of a class within its owl:equivalentClass or rdfs:subClassOf axioms; (c) the appearance of an object property in its rdfs:domain or range rdfs:range definitions; or (d) the appearance of a datatype property in its rdfs:domain definition.	">
+                        Using recursive definitions
+                    </td>
+                    <td>
+                        P24
+                    </td>
+                    <td>
+                        Important
+                    </td>
+                    <td>
+                        http://www.w3.org/2006/time#Interval,
+                        <br/>
+                        http://www.w3.org/2006/time#Instant
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="Several classes whose identifiers are synonyms are created and defined as equivalent (owl:equivalentClass) in the same namespace. This pitfall is related to the guidelines presented in [2], which explain that synonyms for the same concept do not represent different classes.	">
+                        Creating synonyms as classes
+                    </td>
+                    <td>
+                        P02
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://w3id.org/BadmintONTO/Draw,
+                        <br/>
+                        http://w3id.org/BadmintONTO/GameEvent
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	">
+                        Missing annotations
+                    </td>
+                    <td>
+                        P08
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://w3id.org/BadmintONTO/playedBy,
+                        <br/>
+                        http://w3id.org/BadmintONTO/SetDateTimeDesciption,
+                        <br/>
+                        http://w3id.org/BadmintONTO/hasRoleB,
+                        <br/>
+                        http://w3id.org/BadmintONTO/setNumber,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getSetByPlayer,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getSetByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/MatchDateTimeDescription,
+                        <br/>
+                        http://w3id.org/BadmintONTO/eliminationPlayer,
+                        <br/>
+                        http://w3id.org/BadmintONTO/hasRoleA,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/roundRobinGroupStage,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winByPlayer,
+                        <br/>
+                        http://w3id.org/BadmintONTO/inCompetition,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByPlayer,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winBy,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByTeam,
+                        <br/>
+                        http://www.w3.org/2006/time#January,
+                        <br/>
+                        http://w3id.org/BadmintONTO/eliminationStage,
+                        <br/>
+                        http://w3id.org/BadmintONTO/hasLocation,
+                        <br/>
+                        http://w3id.org/BadmintONTO/RoundRobinStage,
+                        <br/>
+                        http://w3id.org/BadmintONTO/InformationObject,
+                        <br/>
+                        http://www.opengis.net/ont/geosparql#asWKT,
+                        <br/>
+                        http://w3id.org/BadmintONTO/inStage,
+                        <br/>
+                        http://w3id.org/BadmintONTO/isInformationAbout,
+                        <br/>
+                        http://w3id.org/BadmintONTO/hasInformationValue
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	">
+                        Creating unconnected ontology elements
+                    </td>
+                    <td>
+                        P04
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://w3id.org/BadmintONTO/Equipment
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="The contents of some annotation properties are swapped or misused. This pitfall might affect annotation properties related to natural language information (for example, annotations for naming such as rdfs:label or for providing descriptions such as rdfs:comment). Other types of annotation could also be affected as temporal, versioning information, among others.	">
+                        Misusing ontology annotations
+                    </td>
+                    <td>
+                        P20
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://w3id.org/BadmintONTO/SudirmanCupCompetition,
+                        <br/>
+                        http://w3id.org/BadmintONTO/ThomasCupCompetition,
+                        <br/>
+                        http://w3id.org/BadmintONTO/UberCupCompetition
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        badmintonto
+                    </td>
+                    <td title="Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	">
+                        Missing domain or range in properties
+                    </td>
+                    <td>
+                        P11
+                    </td>
+                    <td>
+                        Important
+                    </td>
+                    <td>
+                        http://w3id.org/BadmintONTO/getSetByPlayer,
+                        <br/>
+                        http://www.w3.org/2006/time#day,
+                        <br/>
+                        http://www.w3.org/2006/time#year,
+                        <br/>
+                        http://www.w3.org/2006/time#hasDurationDescription,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByPlayer,
+                        <br/>
+                        http://www.w3.org/2006/time#hasDuration,
+                        <br/>
+                        http://www.w3.org/2006/time#hasTime,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getPointByTeam,
+                        <br/>
+                        http://w3id.org/BadmintONTO/hasInformationValue,
+                        <br/>
+                        http://www.w3.org/2006/time#month,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winByPlayer,
+                        <br/>
+                        http://w3id.org/BadmintONTO/isInformationAbout,
+                        <br/>
+                        http://w3id.org/BadmintONTO/getSetByPair,
+                        <br/>
+                        http://w3id.org/BadmintONTO/winBy
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

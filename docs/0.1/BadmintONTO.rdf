@@ -1,0 +1,2200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb86">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb84"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Umpire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:label>Umpire</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/double_player_c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/DoublePlayerRole"/>
+    <rdfs:comment>Double-player role in Pair B</rdfs:comment>
+    <rdfs:label>Double Player C</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MixDouble">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb89">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/SetEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/thirty-second-finals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasRoleB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb15"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/SinglePlayerRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SideHandArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb51">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/MatchEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/matchScoreA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The match score of player/pair A.</rdfs:comment>
+    <rdfs:label>match score A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasSuperEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>hasSuperEvent represents that an event can have another event as a super-event.</rdfs:comment>
+    <rdfs:label>has super-event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb141">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSuperEvent"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/MatchEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchDurationDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DurationDescription"/>
+    <rdfs:comment>To describe a match duration.</rdfs:comment>
+    <rdfs:label>Match Duration Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb106">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb92"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb97"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb98"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb99"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb100"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb101"/>
+    <rdfs:comment>An information object captures relevant information of a match.</rdfs:comment>
+    <rdfs:label>Match Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ShuttleLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+    <rdfs:comment>The location of a shuttle.</rdfs:comment>
+    <rdfs:label>Shuttle Location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SudirmanCupCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/BWFTeamCompetition"/>
+    <rdfs:comment>Mixed team competition organized by BWF.</rdfs:comment>
+    <rdfs:comment>https://en.wikipedia.org/wiki/Sudirman_Cup</rdfs:comment>
+    <rdfs:label>Sudirman Cup Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb176">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/receivingPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ChallengeEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A challenge event called by a player to challenge a judgement.</rdfs:comment>
+    <rdfs:label>Challenge Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:comment>hasPlayer represents that some entities can associate with players/pairs/teams.</rdfs:comment>
+    <rdfs:label>has player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/receivingPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:comment>receivingPlayer represents that the player who will receive a shot is captured by a shot-information object.</rdfs:comment>
+    <rdfs:label>receiving player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Geometry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>http://www.opengis.net/ont/geosparql#Geometry</rdfs:comment>
+    <rdfs:label>Geometry</rdfs:label>
+    <skos:definition>A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb180">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundScoreB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasMatchType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+    <rdfs:comment>hasMatchType represents that the match type is captured by a match-information object.</rdfs:comment>
+    <rdfs:label>has match type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb175">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hittingPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/double_player_d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/DoublePlayerRole"/>
+    <rdfs:comment>Double-player role in Pair B</rdfs:comment>
+    <rdfs:label>Double Player D</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/eliminationPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/EliminationInformation"/>
+    <rdfs:range rdf:nodeID="nfe89a43439c54caca6772ee88755593fb4"/>
+    <rdfs:comment>elimination player</rdfs:comment>
+    <rdfs:comment>eliminationPlayer represents that a elimination tournament can have some players/pairs/teams.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SetDurationDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DurationDescription"/>
+    <rdfs:comment>To description a set.</rdfs:comment>
+    <rdfs:label>Set Duration Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb111">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb109"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb112"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasAgentRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:comment>hasAgentRole represents that an event can have some agents playing specific roles.</rdfs:comment>
+    <rdfs:label>has agent role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PlayerInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb106"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb107"/>
+    <rdfs:comment>An information object captures relevant information of a player.</rdfs:comment>
+    <rdfs:label>Player Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Geometry"/>
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+    <rdfs:comment>The WKT serialization of a Geometry.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ManSingle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/setNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb119">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb117"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb120"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb23">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The different match types in badminton (i.e., man single, men double, woman single, women double and mix double).</rdfs:comment>
+    <rdfs:label>Match Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/setScoreA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/SetInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The set score of player/pair A.</rdfs:comment>
+    <rdfs:label>set score A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/HittingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The hitting area in terms of a player when the player hits a shuttle.</rdfs:comment>
+    <rdfs:label>Hitting Area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb133">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb134"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb137">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundRobinGroup"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb85">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/atCourtArea"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/InformationObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Information Object</rdfs:label>
+    <rdfs:seeAlso>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb63">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb66"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/StrokeEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb181"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb182"/>
+    <rdfs:comment>A stroke event is about a player hitting a shuttle.</rdfs:comment>
+    <rdfs:label>Stroke Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb125">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/shotNumber"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/WithdrawalEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A withdrawal event can be called by a player/pair during/before a match.</rdfs:comment>
+    <rdfs:label>Withdrawal Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/eighth-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb27">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb28"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/LineJudge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:label>Line Judge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb174">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb172"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/setScoreB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/SetInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The set score of player/pair B.</rdfs:comment>
+    <rdfs:label>set score B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hittingPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:comment>hittingPlayer represents that the player who hits a shot is captured by a shot-information object.</rdfs:comment>
+    <rdfs:label>hitting player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RoundRobinGroupInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb126"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb131"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb136"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb137"/>
+    <rdfs:comment>An information object captures relevant information of a round-robin group.</rdfs:comment>
+    <rdfs:label>Round Robin Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/pair_b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/PairPlayersRole"/>
+    <rdfs:comment>Pair-players role as pair B</rdfs:comment>
+    <rdfs:label>Pair B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://w3id.org/BadmintONTO/0.1/"/>
+    <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+    <dcterms:created>2023-03-21</dcterms:created>
+    <dcterms:creator>Huanyu Li</dcterms:creator>
+    <dcterms:license>https://github.com/huanyu-li/BadmintONTO/blob/main/LICENSE</dcterms:license>
+    <dcterms:title>BadmintON onTOlogy (BadmintONTO)</dcterms:title>
+    <vann:preferredNamespacePrefix>badmintonto</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://w3id.org/BadmintONTO/0.1/</vann:preferredNamespaceUri>
+    <rdfs:seeAlso>https://github.com/huanyu-li/BadmintONTO</rdfs:seeAlso>
+    <owl:versionInfo>0.1</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb59">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb60"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasShotType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/ShotType"/>
+    <rdfs:comment>hasShotType represents that the shot type is captured by a shot-information object.</rdfs:comment>
+    <rdfs:label>has shot type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb14">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb8"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+    <rdfs:comment>has Location</rdfs:comment>
+    <rdfs:comment>hasLocation represents that some entities can associate with locations.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/sixteenth-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb95">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb93"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb96"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb126">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/qualifiedPlayer"/>
+    <owl:someValuesFrom rdf:nodeID="nfe89a43439c54caca6772ee88755593fb127"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb156">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasHittingArea"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb138">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/RallyEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Competition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Different Competition Types in badminton.</rdfs:comment>
+    <rdfs:label>Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasSubEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://w3id.org/BadmintONTO/hasSuperEvent"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>hasSubEvent represents that an event can have another event as a sub-event.</rdfs:comment>
+    <rdfs:label>has sub-event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/inCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb178">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/shuttleLandingLocation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/ShuttleLocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Geometry"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb83"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb88"/>
+    <rdfs:comment>The geometric location.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DefensiveClearStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Defensive Clear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/roundScoreA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb40"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The set score of player/pair A.</rdfs:comment>
+    <rdfs:label>round score A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ServiceJudge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:label>Service Judge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb118">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/getPointByPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/occursAtTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    <rdfs:comment>occursAtTime represents that an event takes place at a time.</rdfs:comment>
+    <rdfs:label>occurs at time</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb38"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb6">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/relatesToCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/CompetitionEvent"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:comment>relatesToCompetition represents the type of competition for a competition event.</rdfs:comment>
+    <rdfs:label>relates to competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb61">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb149">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasRoleB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RallyInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb116"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb121"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb122"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb123"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb124"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb125"/>
+    <rdfs:comment>An information object captures relevant information of a rally.</rdfs:comment>
+    <rdfs:label>Rally Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/shotNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The number of shots in a rally.</rdfs:comment>
+    <rdfs:label>shot number</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb44"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/CompetitionEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb51"/>
+    <rdfs:comment>A competition event takes place in period of time, composing different draws and matches.</rdfs:comment>
+    <rdfs:label>Competition Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/isPerformedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:comment>isPerformedBy represents that an agent role is performed by an agent.</rdfs:comment>
+    <rdfs:label>is performed by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/EventInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:comment>An information object captures relevant information of an event.</rdfs:comment>
+    <rdfs:label>Event Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb102">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasRoleA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb11"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/SinglePlayerRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb93">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/winByPair"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Quarter-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/round-of-8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/AttackingClearStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Attacking Clear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ShotInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb155"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb160"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb165"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb170"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb175"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb176"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb177"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb178"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb179"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb180"/>
+    <rdfs:comment>An information object captures relevant information of a shot.</rdfs:comment>
+    <rdfs:label>Shot Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PushStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Push</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb123">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundScoreA"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PairPlayersRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+    <rdfs:comment>A role that a pair of two players takes in a match.</rdfs:comment>
+    <rdfs:label>Pair-Player Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/personFullName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The full name of a person.</rdfs:comment>
+    <rdfs:label>person full name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/BWFTournamentCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:comment>Tournamen competitions organized by BWF.</rdfs:comment>
+    <rdfs:label>BWF Tournament Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb154">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/shuttleLandingLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasLocation"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/ShuttleLocation"/>
+    <rdfs:comment>shuttleLandingLocation represents that a shuttle's landing location is captured by a shot-information object.</rdfs:comment>
+    <rdfs:label>shuttle landing location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/EliminationInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb52"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb57"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb62"/>
+    <rdfs:comment>An information object captures relevant information of the elimination tournament stage.</rdfs:comment>
+    <rdfs:label>Elimination Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchTimeEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb102"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb103"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb104"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb105"/>
+    <rdfs:comment>Temporal entity for a match.</rdfs:comment>
+    <rdfs:label>Match Time Entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RushStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Rush</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb142">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtTime"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/SetTimeEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb182">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb130">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb7">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ThomasCupCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/BWFTeamCompetition"/>
+    <rdfs:comment>Men team competition organized by BWF.</rdfs:comment>
+    <rdfs:comment>https://en.wikipedia.org/wiki/Thomas_Cup</rdfs:comment>
+    <rdfs:label>Thomas Cup Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb171">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasShotType"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/ShotType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb68">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb71"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb110">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/playedBy"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb107">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/playerLocation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/PlayerLocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb103">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/MatchDurationDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SetInformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb143"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb148"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb149"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb150"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb151"/>
+    <rdfs:comment>An information object captures relevant information of a set.</rdfs:comment>
+    <rdfs:label>Set Information</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/playerHeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:comment>The height of a player.</rdfs:comment>
+    <rdfs:label>player height</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/BWFTeamCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:comment>Team competitions organized by the Badminton World Federation (BWF).</rdfs:comment>
+    <rdfs:label>BWF Team Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/TournamentStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Round-Robin stage or Elimination stage.</rdfs:comment>
+    <rdfs:label>Tournament Stage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb81">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb79"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb82"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/roundRobinPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RoundRobinGroupInformation"/>
+    <rdfs:range rdf:nodeID="nfe89a43439c54caca6772ee88755593fb26"/>
+    <rdfs:comment>roundRobinPlayer represents that a group in a round robin tournament can have some players/pairs/teams.</rdfs:comment>
+    <rdfs:label>round robin player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DefensiveReturnDriveStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Defensive Return-Drive</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb45">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SetEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb138"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb139"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb140"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb141"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb142"/>
+    <rdfs:comment>A set event is with in a match and ends after the one player/pair wins 21 points and wins by 2 points at least.</rdfs:comment>
+    <rdfs:label>Set Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb65">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasAgentRole"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb21">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/RoundRobinGroupInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb114">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/StrokeEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SetTimeEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb152"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb153"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb154"/>
+    <rdfs:comment>Temporal entity for a set.</rdfs:comment>
+    <rdfs:label>Set Time Entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Draw">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+    <rdfs:comment>The different match types in badminton (i.e., man single, men double, woman single, women double and mix double).</rdfs:comment>
+    <rdfs:label>Draw</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/roundScoreB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb43"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The round score of player/pair B.</rdfs:comment>
+    <rdfs:label>round score B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb104">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/highestWorldRanking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb37"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The highest world ranking of a player/pair.</rdfs:comment>
+    <rdfs:label>highest world ranking</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rr-round3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb152">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rallyLoseReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The lose reason of a rally.</rdfs:comment>
+    <rdfs:label>rally lose reason</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/UberCupCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/BWFTeamCompetition"/>
+    <rdfs:comment>Women team competition organized by BWF.</rdfs:comment>
+    <rdfs:comment>https://en.wikipedia.org/wiki/Uber_Cup</rdfs:comment>
+    <rdfs:label>Uber Cup Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/playerLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasLocation"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/PlayerInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/PlayerLocation"/>
+    <rdfs:comment>playerLocation represents that a player's location is captured by a player-information object.</rdfs:comment>
+    <rdfs:label>player location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/roundRobinGroupStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RoundRobinGroupInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+    <rdfs:comment>roundRobinGroupStage represents in which stage that a round-robin play is.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb177">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/shuttleHitLocation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/ShuttleLocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Double">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtTime"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DrivenFlightStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Driven Flight</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb145">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/getSetByPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb48">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isPerformedBy"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/currentWorldRanking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb34"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The current world ranking of a player/pair.</rdfs:comment>
+    <rdfs:label>current working ranking</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/winBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:range rdf:nodeID="nfe89a43439c54caca6772ee88755593fb30"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Pair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:comment>Pairs in double plays (i.e., men double, women double and mix double).</rdfs:comment>
+    <rdfs:label>Pair</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb24">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb99">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/inCompetition"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/matchScoreB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb35"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/HittingStyle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A hitting style indicates if a shot is hit backhand or forehand.</rdfs:comment>
+    <rdfs:label>Hittting Style</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb161">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasHittingStyle"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/HittingStyle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/playerAge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The age of a player.</rdfs:comment>
+    <rdfs:label>player age</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb56">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DriveStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/FlickStroke"/>
+    <rdfs:label>Drive</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/double_player_b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/DoublePlayerRole"/>
+    <rdfs:comment>Double-player role in Pair A</rdfs:comment>
+    <rdfs:label>Double Player B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb94">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/winByPlayer"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb122">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/rallyWinReason"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb18">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb63"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb68"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb73"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb78"/>
+    <rdfs:comment>Activities that take place within a given context or timeframe.</rdfs:comment>
+    <rdfs:label>Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/playedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isPerformedBy"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdfs:comment>played By</rdfs:comment>
+    <rdfs:comment>playedBy represents that a player role is performed by a player.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RallyEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb113"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb114"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb115"/>
+    <rdfs:comment>A rally event starts with a serve and ends until one of the two players/pairs wins the point.</rdfs:comment>
+    <rdfs:label>Rally Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Serve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/ShotType"/>
+    <rdfs:comment>A serve is always played by a player as a start of a rally.</rdfs:comment>
+    <rdfs:label>Serve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb144">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/getSetByPair"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb120">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb118"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/GetPointEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/getSetByPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/CourtArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A court area indicates a particular area in a court.</rdfs:comment>
+    <rdfs:label>Court Area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PassiveDropStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Passive Drop</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb9">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/PlayerInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtTime"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb72">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb70"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PenaltyEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A penalty event can be called by an umpire.</rdfs:comment>
+    <rdfs:label>Penalty Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/sixteenth-finals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/CrossCourtNetStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Cross-Court Net</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb40">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb41"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/double_player_a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/DoublePlayerRole"/>
+    <rdfs:comment>Double-player role in Pair A</rdfs:comment>
+    <rdfs:label>Double Player A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb134">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb135"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/atCourtArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb1"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+    <rdfs:comment>atCourtArea is to represent the location of a player/shuttle at a specific court area.</rdfs:comment>
+    <rdfs:label>at court area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb179">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundScoreA"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb173">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb171"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb174"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Equipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Equipments in badmintion domain.</rdfs:comment>
+    <rdfs:label>Equipment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb26">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb27"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb157">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasHittingArea"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rr-round2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ShotType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A shot can be classfied as a server or a specific stroke.</rdfs:comment>
+    <rdfs:label>Shot Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Single">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/EliminationStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/TournamentStage"/>
+    <rdfs:comment>Sudden-death play.</rdfs:comment>
+    <rdfs:label>Elimination Stage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb150">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/setScoreA"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasHittingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+    <rdfs:comment>hasHittingArea represents that a shot is hit at a particular area in terms of the player.</rdfs:comment>
+    <rdfs:label>has hitting area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isPerformedBy"/>
+    <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb16">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/WomenDouble">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/LiftStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/LobStroke"/>
+    <rdfs:label>Lift</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb71">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb69"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb72"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rallyWinReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The win reason of a rally.</rdfs:comment>
+    <rdfs:label>rally win reason</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PlayerLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+    <rdfs:comment>The location of a player.</rdfs:comment>
+    <rdfs:label>Player Location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/qualifiedPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <rdfs:domain rdf:nodeID="nfe89a43439c54caca6772ee88755593fb19"/>
+    <rdfs:range rdf:nodeID="nfe89a43439c54caca6772ee88755593fb22"/>
+    <rdfs:comment>The players/pairs/teams are qualified in a round-robin group or elimination stage.</rdfs:comment>
+    <rdfs:label>qualified player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/UnderHandArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb121">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/rallyLoseReason"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/BackCourtDriveStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Back-Court Drive</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/LongServe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Serve"/>
+    <rdfs:label>Long Serve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/shuttleHitLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasLocation"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/ShuttleLocation"/>
+    <rdfs:comment>shuttleHitLocation represents that a shuttle's hit location is captured by a shot-information object.</rdfs:comment>
+    <rdfs:label>shuttle hit location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasHittingStyle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/HittingStyle"/>
+    <rdfs:comment>hasHittingStyle represents that if a shuttle is hit backhand or forehand by a player.</rdfs:comment>
+    <rdfs:label>has hitting style</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb54">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb55"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb109">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/playedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ChangeCourtEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A change-court event can happen between sets, or after one player or one pair firstly wins 11 points.</rdfs:comment>
+    <rdfs:label>Change-Court Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb116">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb119"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb52">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/eliminationPlayer"/>
+    <owl:someValuesFrom rdf:nodeID="nfe89a43439c54caca6772ee88755593fb53"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SummerOlymipicsCompetition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:comment>A badminton competition in a summer olympics.</rdfs:comment>
+    <rdfs:label>Summer Olympics Competition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb148">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasRoleA"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb112">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb110"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb117">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/getPointByPair"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Player">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Person"/>
+    <rdfs:comment>A player in badmintion related events.</rdfs:comment>
+    <rdfs:label>Player</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/GetPointEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A get-point event is as the last sub-event in a rally event.</rdfs:comment>
+    <rdfs:label>Get-Point Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb113">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/AgentRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb46"/>
+    <rdfs:comment>A role that an agent can take in a specific context.</rdfs:comment>
+    <rdfs:label>Agent Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb60">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb61"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb105">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#inDateTime"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/MatchDateTimeDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb168">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb166"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb169"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/LobStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Lob</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb108">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb111"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb153">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/SetDurationDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb73">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb76"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ForehandHitting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingStyle"/>
+    <rdfs:label>Forehand Hitting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MedicalPauseEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A medical pause event can be asked by a player.</rdfs:comment>
+    <rdfs:label>Medical Pause Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb67">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb65"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/inStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/TournamentStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SmashStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Smash</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/EliminationEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>The event for the elimination stage at a tournament.</rdfs:comment>
+    <rdfs:label>Elimination Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb44">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb45"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb140">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasSubEvent"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/RestEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb32">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasDraw">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Competition"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Draw"/>
+    <rdfs:comment>hasDraw represents that a particular competition can have different draws (e.g., man single, men doubble, woman single, women double and mix double).</rdfs:comment>
+    <rdfs:label>has draw</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Racket">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Equipment"/>
+    <rdfs:label>Racket</rdfs:label>
+    <skos:definition>Rackets in badminton domain.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb31">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb25">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb91">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtTime"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/MatchTimeEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb78">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb81"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb158">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb156"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb159"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/FlickStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Flick</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ShuttleRoute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The route of the shuttle after a play hitting a shuttle.</rdfs:comment>
+    <rdfs:label>Shuttle Route</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb124">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundScoreB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb33">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasRoute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/ShuttleRoute"/>
+    <rdfs:comment>hasRoute represents that the route of a shuttle after hitting.</rdfs:comment>
+    <rdfs:label>has route</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb96">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb94"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/OverHandArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb160">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb163"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/isDescribedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+    <rdfs:comment>isDescribedBy represents that an event can be described an information object that captures relevant information.</rdfs:comment>
+    <rdfs:label>is described by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RestEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A rest event can happen in between sets and after one of the two players/pairs firstly wins 11 points in a set.</rdfs:comment>
+    <rdfs:label>Rest Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb163">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb161"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb164"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb92">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:comment>A person agent can have some roles.</rdfs:comment>
+    <rdfs:label>Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb75">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtLocation"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/WristSmashStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Wrist Smash</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Stroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/ShotType"/>
+    <rdfs:comment>A stroke is played a player after serving in a rally.</rdfs:comment>
+    <rdfs:label>Stroke</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb181">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/PlayerInformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/eliminationStage"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb2">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/PlayerLocation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb127">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb128"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MenDouble">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb155">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb158"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb162">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasHittingStyle"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/HittingStyle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb46">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb49"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/eliminationStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/isInformationAbout"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/EliminationInformation"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <rdfs:comment>eliminationStage represents in which stage that an elimination play is.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DoublePlayerRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+    <rdfs:comment>A role that a player takes in a double match.</rdfs:comment>
+    <rdfs:label>Double Player Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb70">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ClearStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Clear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/roundRobinGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/RoundRobinGroupInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>round-robin group number.</rdfs:comment>
+    <rdfs:label>round robin group</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/sixty-fourth-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb54"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb76">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb74"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb77"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/occursAtLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+    <rdfs:comment>occursAtLocation represents that an event takes place at a location.</rdfs:comment>
+    <rdfs:label>occurs at location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb38">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb39"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SlashRoute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/ShuttleRoute"/>
+    <rdfs:label>Slash Route</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb89"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb90"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb91"/>
+    <rdfs:comment>A match event is participated by two single players or two pairs, and contains 3 sets at most.</rdfs:comment>
+    <rdfs:label>Match Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RoundRobinStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/TournamentStage"/>
+    <rdfs:label>Round Robin Stage</rdfs:label>
+    <rdfs:label>round-robin play.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/round-of-2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#asWKT"/>
+    <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/qualifiedPlayer"/>
+    <owl:someValuesFrom rdf:nodeID="nfe89a43439c54caca6772ee88755593fb58"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Team">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:comment>A team in a team-baed competition.</rdfs:comment>
+    <rdfs:label>Team</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb83">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb86"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb39">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SinglePlayerRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/PlayerRole"/>
+    <rdfs:comment>A role that a player takes in a single match.</rdfs:comment>
+    <rdfs:label>Single Player Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/BackhandHitting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingStyle"/>
+    <rdfs:label>Bankhand Hitting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb58">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb59"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/SetDateTimeDesciption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/isInformationAbout">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/winByPair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ReturnNetStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Return Net</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb166">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasRoute"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/ShuttleRoute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/GameEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/BadmintONTO/SetEvent"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>A set (game) in a match.</rdfs:comment>
+    <rdfs:label>Game Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb159">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb157"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb28">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb29"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb77">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb75"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/occursAtLocation"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb41">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/RallyInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb42"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/belongToCountry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/Location"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>ISO (3166) country code</rdfs:comment>
+    <rdfs:label>belong to country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/MatchDateTimeDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb100">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/matchScoreA"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/PlayerRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:subClassOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb108"/>
+    <rdfs:comment>A role that a player takes in a match.</rdfs:comment>
+    <rdfs:label>Player Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/DropStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Drop</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RoundRobinGroupEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/BadmintONTO/Event"/>
+    <rdfs:comment>An event for a round-robin group at a tournament.</rdfs:comment>
+    <rdfs:label>Round Robin Group Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-128">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/sixty-fourth-finals"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb35">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb36"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/matchScoreB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/hasInformationValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment>The match score of player/pair B.</rdfs:comment>
+    <rdfs:label>match score B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb31"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb169">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb167"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb129">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb130"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/RoundHeadArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/HittingArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb151">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/setScoreB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Group-Stage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb98">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasMatchType"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb20">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/EliminationInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb165">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb168"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb128">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb129"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/pair_a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/PairPlayersRole"/>
+    <rdfs:comment>Pair-players role as pair A</rdfs:comment>
+    <rdfs:label>Pair A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasAgentRole"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/winByPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/getPointByTeam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Semi-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+    <owl:sameAs rdf:resource="http://w3id.org/BadmintONTO/round-of-4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/thirty-second-finals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb139">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/SetInformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/A_7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb10">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb66">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb64"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb97">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasPlayer"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb12">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/MatchInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb49">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb47"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb50"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb50">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb48"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/getSetByPair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/Doctor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/AgentRole"/>
+    <rdfs:label>Doctor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+    <rdfs:label>Agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb17">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/SetInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/StraightRoute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/ShuttleRoute"/>
+    <rdfs:label>Stright Route</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb84">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/atCourtArea"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rr-round4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb132">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb133"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/getPointByPair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb147">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb145"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb164">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb162"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb131">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundRobinPlayer"/>
+    <owl:someValuesFrom rdf:nodeID="nfe89a43439c54caca6772ee88755593fb132"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/NetPlayStroke">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Stroke"/>
+    <rdfs:label>Net Play</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb87">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb85"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/B_6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/CourtArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/WomanSingle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/MatchType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb146">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb144"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb147"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb136">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/roundRobinGroupStage"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb3">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShuttleLocation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb143">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb146"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb42">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/ShotInformation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/ShortServe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/Serve"/>
+    <rdfs:label>Short Serve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb5">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Pair"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb82">
+    <rdf:first rdf:nodeID="nfe89a43439c54caca6772ee88755593fb80"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb29">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/rr-round1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/RoundRobinStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb170">
+    <owl:intersectionOf rdf:nodeID="nfe89a43439c54caca6772ee88755593fb173"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/round-of-8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/BadmintONTO/EliminationStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#wktLiteral">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdfs:comment>A Well-known Text serialization of a Geometry object.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/hasInformationValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/BadmintONTO/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb135">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Team"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb167">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasRoute"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/ShuttleRoute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb172">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/BadmintONTO/hasShotType"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/BadmintONTO/ShotType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb13">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/SetInformation"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/BadmintONTO/getPointByPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/BadmintONTO/winBy"/>
+    <rdfs:range rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb36">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfe89a43439c54caca6772ee88755593fb55">
+    <rdf:first rdf:resource="http://w3id.org/BadmintONTO/Player"/>
+    <rdf:rest rdf:nodeID="nfe89a43439c54caca6772ee88755593fb56"/>
+  </rdf:Description>
+</rdf:RDF>

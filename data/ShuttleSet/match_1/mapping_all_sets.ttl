@@ -1,0 +1,112 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix badmintonto: <http://w3id.org/BadmintONTO/>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@base <http://example.com/>.
+
+# all sets source
+<all_sets_source>
+    rml:source "./ShuttleSet/match_1/sets.csv" ;
+    rml:referenceFormulation ql:CSV 
+.
+
+<set_event_mapping>
+    rml:logicalSource <all_sets_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set_event-{set}";
+        rr:class badmintonto:SetEvent
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isDescribedBy;
+        rr:objectMap [
+            rr:parentTriplesMap <sets_information_mapping>;
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasSuperEvent;
+        rr:objectMap [
+            rr:template "http://example.com/match_event-1";
+        ]
+    ]
+.
+
+<sets_information_mapping>
+    rml:logicalSource <all_sets_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set_event_{set}-info";
+        rr:class badmintonto:SetInformation
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:setScoreA;
+        rr:objectMap [
+            rml:reference "setscoreA";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:setScoreB;
+        rr:objectMap [
+            rml:reference "setscoreB";
+            rr:datatype xsd:nonNegativeInteger
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasRoleA;
+        rr:objectMap [
+            rr:parentTriplesMap <sets_role_A_mapping>;
+                rr:joinCondition [
+                    rr:child "set";
+                    rr:parent "set";
+                ];
+            ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:hasRoleB;
+        rr:objectMap [
+            rr:parentTriplesMap <sets_role_B_mapping>;
+                rr:joinCondition [
+                    rr:child "set";
+                    rr:parent "set";
+                ];
+            ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:getSetByPlayer;
+        rr:objectMap [
+            rr:template "http://example.com/player-{winner}";
+        ]
+    ]
+.
+
+<sets_role_A_mapping>
+    rml:logicalSource <all_sets_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set_event_{set}-role-A";
+        rr:class badmintonto:SinglePlayerRole
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isPerformedBy;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player_A}";
+        ]
+    ]
+.
+
+<sets_role_B_mapping>
+    rml:logicalSource <all_sets_source>;
+    rr:subjectMap [
+        rr:template "http://example.com/match_1/set_event_{set}-role-B";
+        rr:class badmintonto:SinglePlayerRole
+    ];
+    rr:predicateObjectMap [
+        rr:predicate badmintonto:isPerformedBy;
+        rr:objectMap [
+            rr:template "http://example.com/player-{player_B}";
+        ]
+    ]
+.

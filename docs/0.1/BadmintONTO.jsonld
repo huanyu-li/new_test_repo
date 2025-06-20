@@ -1,0 +1,6201 @@
+[
+  {
+    "@id": "http://w3id.org/BadmintONTO/hittingPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hittingPlayer represents that the player who hits a shot is captured by a shot-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hitting player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/roundRobinGroupStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "roundRobinGroupStage represents in which stage that a round-robin play is."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RoundRobinStage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ChangeCourtEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A change-court event can happen between sets, or after one player or one pair firstly wins 11 points."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Change-Court Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/getPointByPair",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SetDurationDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "To description a set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Set Duration Description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#DurationDescription"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RallyEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A rally event starts with a serve and ends until one of the two players/pairs wins the point."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rally Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb113"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb114"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb115"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb113",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb114",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minQualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/StrokeEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb115",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/GetPointEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A person agent can have some roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/UberCupCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Women team competition organized by BWF."
+      },
+      {
+        "@value": "https://en.wikipedia.org/wiki/Uber_Cup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Uber Cup Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/BWFTeamCompetition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasInformationValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/winByPair",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ShuttleRoute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The route of the shuttle after a play hitting a shuttle."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Shuttle Route"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/playerHeight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The height of a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "player height"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PlayerRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A role that a player takes in a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Player Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/AgentRole"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb108"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb108",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb109"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb110"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb109",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/playedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb110",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/playedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasDraw",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasDraw represents that a particular competition can have different draws (e.g., man single, men doubble, woman single, women double and mix double)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has draw"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Draw"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MixDouble",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PlayerLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The location of a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Player Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/atCourtArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "atCourtArea is to represent the location of a player/shuttle at a specific court area."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "at court area"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/CourtArea"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/PlayerLocation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShuttleLocation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SetEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A set event is with in a match and ends after the one player/pair wins 21 points and wins by 2 points at least."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Set Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb138"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb139"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb140"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb141"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb142"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb138",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RallyEvent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb139",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetInformation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb140",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RestEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb141",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSuperEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb142",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetTimeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DriveStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Drive"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/FlickStroke"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/highestWorldRanking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The highest world ranking of a player/pair."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb37"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "highest world ranking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Quarter-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/round-of-8"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/eliminationStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "eliminationStage represents in which stage that an elimination play is."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/EliminationInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/EliminationStage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-128",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/sixty-fourth-finals"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/LobStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lob"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_15",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/WomanSingle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Racket",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Racket"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Equipment"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Rackets in badminton domain."
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SinglePlayerRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A role that a player takes in a single match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Single Player Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Double",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/OverHandArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasRoleB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb15"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SinglePlayerRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb15",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/SetInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/roundRobinPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "roundRobinPlayer represents that a group in a round robin tournament can have some players/pairs/teams."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "round robin player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb26"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb26",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SetDateTimeDesciption",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#GeneralDateTimeDescription"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DefensiveClearStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Defensive Clear"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/UnderHandArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/round-of-2"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/BackhandHitting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingStyle"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Bankhand Hitting"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/LiftStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lift"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/LobStroke"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/thirty-second-finals"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ShotType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A shot can be classfied as a server or a specific stroke."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Shot Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/matchScoreA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The match score of player/pair A."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "match score A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/isInformationAbout",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/winByPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/roundScoreA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set score of player/pair A."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb40"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "round score A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb40",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Equipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Equipments in badmintion domain."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Equipment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SudirmanCupCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mixed team competition organized by BWF."
+      },
+      {
+        "@value": "https://en.wikipedia.org/wiki/Sudirman_Cup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Sudirman Cup Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/BWFTeamCompetition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/setScoreB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set score of player/pair B."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "set score B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/AttackingClearStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Attacking Clear"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rr-round4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/RoundRobinStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/double_player_a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/DoublePlayerRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Double-player role in Pair A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Double Player A"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/relatesToCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "relatesToCompetition represents the type of competition for a competition event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/CompetitionEvent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "relates to competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Single",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/pair_a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/PairPlayersRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Pair-players role as pair A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pair A"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/playedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "played By"
+      },
+      {
+        "@value": "playedBy represents that a player role is performed by a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isPerformedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RushStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rush"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/BackCourtDriveStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Back-Court Drive"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasRoute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasRoute represents that the route of a shuttle after hitting."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has route"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleRoute"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/WithdrawalEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A withdrawal event can be called by a player/pair during/before a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Withdrawal Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasAgentRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasAgentRole represents that an event can have some agents playing specific roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has agent role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/AgentRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DefensiveReturnDriveStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Defensive Return-Drive"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/HittingArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The hitting area in terms of a player when the player hits a shuttle."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hitting Area"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/GetPointEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A get-point event is as the last sub-event in a rally event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Get-Point Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DrivenFlightStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Driven Flight"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SetInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Set Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb143"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb148"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb149"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb150"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb151"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb143",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb144"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb145"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb144",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/getSetByPair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb145",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/getSetByPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb148",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasRoleA"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb149",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasRoleB"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/setScoreA"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb151",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/setScoreB"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/getSetByPair",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rr-round3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/RoundRobinStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/shotNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The number of shots in a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "shot number"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/StraightRoute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/ShuttleRoute"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Stright Route"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/LineJudge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/AgentRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Line Judge"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "has Location"
+      },
+      {
+        "@value": "hasLocation represents that some entities can associate with locations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/PlayerInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DoublePlayerRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A role that a player takes in a double match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Double Player Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/NetPlayStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Net Play"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The different match types in badminton (i.e., man single, men double, woman single, women double and mix double)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Match Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/double_player_d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/DoublePlayerRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Double-player role in Pair B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Double Player D"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ShotInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a shot."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Shot Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb155"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb160"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb165"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb170"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb175"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb176"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb177"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb178"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb179"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb180"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb155",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb156"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb157"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb156",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasHittingArea"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingArea"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb157",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingArea"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasHittingArea"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb160",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb161"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb162"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb161",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasHittingStyle"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingStyle"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb162",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingStyle"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasHittingStyle"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb165",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb166"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb167"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb166",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasRoute"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleRoute"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb167",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleRoute"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasRoute"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb170",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb171"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb172"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb171",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasShotType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotType"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb172",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasShotType"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb175",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hittingPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb176",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/receivingPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb177",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/shuttleHitLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb178",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/shuttleLandingLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb179",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundScoreA"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb180",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundScoreB"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/matchScoreB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The match score of player/pair B."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "match score B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/TournamentStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Round-Robin stage or Elimination stage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Tournament Stage"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/roundScoreB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The round score of player/pair B."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb43"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "round score B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb43",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SmashStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Smash"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MenDouble",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/getPointByPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ReturnNetStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Return Net"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/receivingPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "receivingPlayer represents that the player who will receive a shot is captured by a shot-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "receiving player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasSuperEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasSuperEvent represents that an event can have another event as a super-event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has super-event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasSubEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasSubEvent represents that an event can have another event as a sub-event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has sub-event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSuperEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/roundRobinGroup",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "round-robin group number."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "round robin group"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/ont/geosparql#asWKT",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The WKT serialization of a Geometry."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Geometry"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#wktLiteral"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SideHandArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RoundHeadArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2023-03-21"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Huanyu Li"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@value": "https://github.com/huanyu-li/BadmintONTO/blob/main/LICENSE"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "BadmintON onTOlogy (BadmintONTO)"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "badmintonto"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@value": "http://w3id.org/BadmintONTO/0.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://github.com/huanyu-li/BadmintONTO"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.w3.org/2006/time#2016"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/0.1/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "0.1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasPlayer represents that some entities can associate with players/pairs/teams."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/EliminationEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event for the elimination stage at a tournament."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Elimination Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/setNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/shuttleLandingLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "shuttleLandingLocation represents that a shuttle's landing location is captured by a shot-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "shuttle landing location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasLocation"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasRoleA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb11"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SinglePlayerRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/SetInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/currentWorldRanking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The current world ranking of a player/pair."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb34"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "current working ranking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/sixteenth-finals"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/pair_b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/PairPlayersRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Pair-players role as pair B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pair B"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/WomenDouble",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/inCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/playerAge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The age of a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "player age"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/inStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/TournamentStage"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rallyWinReason",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The win reason of a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rally win reason"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/EventInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of an event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Event Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/shuttleHitLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "shuttleHitLocation represents that a shuttle's hit location is captured by a shot-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "shuttle hit location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShuttleLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasLocation"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ClearStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Clear"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/double_player_b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/DoublePlayerRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Double-player role in Pair A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Double Player B"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Location",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The geometric location."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Geometry"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb83"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb88"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb83",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb84"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb85"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb84",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/atCourtArea"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/CourtArea"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb85",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/CourtArea"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/atCourtArea"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb88",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#asWKT"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#wktLiteral"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SetTimeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Temporal entity for a set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Set Time Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb152"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb153"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb154"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb152",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasBeginning"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb153",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetDurationDescription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasDurationDescription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb154",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasEnd"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchTimeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Temporal entity for a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Match Time Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb102"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb103"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb104"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb105"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb102",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasBeginning"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb103",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchDurationDescription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasDurationDescription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb104",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasEnd"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb105",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchDateTimeDescription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2006/time#inDateTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MedicalPauseEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A medical pause event can be asked by a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Medical Pause Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_15",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasShotType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasShotType represents that the shot type is captured by a shot-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has shot type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasHittingStyle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasHittingStyle represents that if a shuttle is hit backhand or forehand by a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has hitting style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingStyle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PairPlayersRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A role that a pair of two players takes in a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pair-Player Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Team",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A team in a team-baed competition."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Team"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rr-round2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/RoundRobinStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a round-robin group."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Round Robin Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb126"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb131"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb136"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb137"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb126",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/qualifiedPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb127"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb127",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb131",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundRobinPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb132"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb132",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb136",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RoundRobinStage"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundRobinGroupStage"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb137",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundRobinGroup"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A match event is participated by two single players or two pairs, and contains 3 sets at most."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Match Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb89"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb90"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb91"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb89",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetEvent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb90",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb91",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchTimeEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Geometry",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "http://www.opengis.net/ont/geosparql#Geometry"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Geometry"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS)."
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/sixty-fourth-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/AgentRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A role that an agent can take in a specific context."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Agent Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb46"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb46",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb47"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb47",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isPerformedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb48",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isPerformedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/WristSmashStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Wrist Smash"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ForehandHitting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/HittingStyle"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Forehand Hitting"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ServiceJudge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/AgentRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Service Judge"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RallyInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rally Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb116"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb121"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb122"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb123"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb124"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb125"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb116",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb117"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb118"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb117",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/getPointByPair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb118",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/getPointByPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb121",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/rallyLoseReason"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb122",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/rallyWinReason"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb123",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundScoreA"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb124",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/roundScoreB"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb125",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/shotNumber"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ShortServe",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Serve"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Short Serve"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/EliminationStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Sudden-death play."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Elimination Stage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/TournamentStage"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/CompetitionEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A competition event takes place in period of time, composing different draws and matches."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Competition Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb51"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb51",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasSubEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/FlickStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Flick"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ChallengeEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A challenge event called by a player to challenge a judgement."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Challenge Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rr-round1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/RoundRobinStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/eliminationPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "elimination player"
+      },
+      {
+        "@value": "eliminationPlayer represents that a elimination tournament can have some players/pairs/teams."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/EliminationInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PlayerInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Player Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb106"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb107"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb106",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb107",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/playerLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasHittingArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasHittingArea represents that a shot is hit at a particular area in terms of the player."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has hitting area"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/HittingArea"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/rallyLoseReason",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The lose reason of a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/RallyInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rally lose reason"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchDurationDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "To describe a match duration."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Match Duration Description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#DurationDescription"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/EliminationInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of the elimination tournament stage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Elimination Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb52"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb57"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb62"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb52",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/eliminationPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb53"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb57",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/qualifiedPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb58"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb58",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb62",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/EliminationStage"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/eliminationStage"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RoundRobinStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Round Robin Stage"
+      },
+      {
+        "@value": "round-robin play."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/TournamentStage"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/hasMatchType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hasMatchType represents that the match type is captured by a match-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has match type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Doctor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/AgentRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Doctor"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Semi-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/round-of-4"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/personFullName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The full name of a person."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "person full name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/qualifiedPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The players/pairs/teams are qualified in a round-robin group or elimination stage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb19"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualified player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb22"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/EliminationInformation"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupInformation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/HittingStyle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A hitting style indicates if a shot is hit backhand or forehand."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hittting Style"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An agent (eg. person, group, software or physical artifact)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Player",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A player in badmintion related events."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Event",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Activities that take place within a given context or timeframe."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb63"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb68"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb73"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb78"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb63",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb64"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasAgentRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/AgentRole"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb65",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/AgentRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasAgentRole"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb68",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb69"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb69",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb70",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb73",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb74"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb75"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb74",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtLocation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb75",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtLocation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb78",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb79"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb79",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/occursAtTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/CourtArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A court area indicates a particular area in a court."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Court Area"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Pair",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Pairs in double plays (i.e., men double, women double and mix double)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pair"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Stroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A stroke is played a player after serving in a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Stroke"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RestEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A rest event can happen in between sets and after one of the two players/pairs firstly wins 11 points in a set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rest Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/getPointByTeam",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Team"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PenaltyEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A penalty event can be called by an umpire."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Penalty Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Group-Stage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/RoundRobinStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Umpire",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/AgentRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Umpire"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/InformationObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PushStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Push"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/occursAtLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "occursAtLocation represents that an event takes place at a location."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "occurs at location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/StrokeEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A stroke event is about a player hitting a shuttle."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Stroke Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb181"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb182"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb181",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerInformation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb182",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotInformation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/thirty-second-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/winBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb30"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/isInformationAbout"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/BadmintONTO/Pair"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Player"
+          },
+          {
+            "@id": "http://w3id.org/BadmintONTO/Team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SummerOlymipicsCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A badminton competition in a summer olympics."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Summer Olympics Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ShuttleLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The location of a shuttle."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Shuttle Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/LongServe",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Serve"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Long Serve"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/belongToCountry",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ISO (3166) country code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "belong to country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/isDescribedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "isDescribedBy represents that an event can be described an information object that captures relevant information."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is described by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/isPerformedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "isPerformedBy represents that an agent role is performed by an agent."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/AgentRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is performed by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/getSetByPlayer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/double_player_c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/DoublePlayerRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Double-player role in Pair B"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Double Player C"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/BWFTeamCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Team competitions organized by the Badminton World Federation (BWF)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "BWF Team Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/PassiveDropStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Passive Drop"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/CrossCourtNetStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cross-Court Net"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/SlashRoute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/ShuttleRoute"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Slash Route"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/GameEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A set (game) in a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Game Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ManSingle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/MatchType"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/RoundRobinGroupEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An event for a round-robin group at a tournament."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Round Robin Group Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/BWFTournamentCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Tournamen competitions organized by BWF."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "BWF Tournament Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Competition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/B_7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/eighth-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchDateTimeDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#GeneralDateTimeDescription"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Serve",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A serve is always played by a player as a start of a rally."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Serve"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/ShotType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/sixteenth-finals",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Draw",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The different match types in badminton (i.e., man single, men double, woman single, women double and mix double)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Draw"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/ThomasCupCompetition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Men team competition organized by BWF."
+      },
+      {
+        "@value": "https://en.wikipedia.org/wiki/Thomas_Cup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Thomas Cup Competition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/BWFTeamCompetition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/DropStroke",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/Stroke"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Drop"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/A_11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/CourtArea"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/occursAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "occursAtTime represents that an event takes place at a time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "occurs at time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/setScoreA",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set score of player/pair A."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/SetInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "set score A"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasInformationValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/round-of-4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/BadmintONTO/EliminationStage"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/MatchInformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An information object captures relevant information of a match."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Match Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/InformationObject"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb92"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb97"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb98"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb99"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb100"
+      },
+      {
+        "@id": "_:nfe89a43439c54caca6772ee88755593fb101"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb92",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb93"
+          },
+          {
+            "@id": "_:nfe89a43439c54caca6772ee88755593fb94"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb93",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Pair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winByPair"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb94",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/winByPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb97",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasPlayer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/Player"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb98",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/MatchType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasMatchType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb99",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/inCompetition"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb100",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/matchScoreA"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfe89a43439c54caca6772ee88755593fb101",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/matchScoreB"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/Competition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Different Competition Types in badminton."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Competition"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.opengis.net/ont/geosparql#wktLiteral",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Well-known Text serialization of a Geometry object."
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/BadmintONTO/playerLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "playerLocation represents that a player's location is captured by a player-information object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerInformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "player location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/PlayerLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/BadmintONTO/hasLocation"
+      }
+    ]
+  }
+]

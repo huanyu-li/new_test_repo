@@ -1,0 +1,1352 @@
+@prefix : <http://w3id.org/BadmintONTO/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+: a owl:Ontology ;
+    dcterms:created "2023-03-21" ;
+    dcterms:creator "Huanyu Li" ;
+    dcterms:license "https://github.com/huanyu-li/BadmintONTO/blob/main/LICENSE" ;
+    dcterms:title "BadmintON onTOlogy (BadmintONTO)" ;
+    vann:preferredNamespacePrefix "badmintonto" ;
+    vann:preferredNamespaceUri "http://w3id.org/BadmintONTO/0.1/" ;
+    rdfs:seeAlso "https://github.com/huanyu-li/BadmintONTO" ;
+    owl:imports time:2016 ;
+    owl:versionIRI <http://w3id.org/BadmintONTO/0.1/> ;
+    owl:versionInfo "0.1" .
+
+:A_1 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_10 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_11 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_12 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_13 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_14 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_15 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_16 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_2 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_3 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_4 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_5 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_6 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_7 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_8 a :CourtArea,
+        owl:NamedIndividual .
+
+:A_9 a :CourtArea,
+        owl:NamedIndividual .
+
+:AttackingClearStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Attacking Clear" .
+
+:BWFTournamentCompetition a owl:Class ;
+    rdfs:label "BWF Tournament Competition" ;
+    rdfs:comment "Tournamen competitions organized by BWF." ;
+    rdfs:subClassOf :Competition .
+
+:B_1 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_10 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_11 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_12 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_13 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_14 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_15 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_16 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_2 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_3 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_4 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_5 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_6 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_7 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_8 a :CourtArea,
+        owl:NamedIndividual .
+
+:B_9 a :CourtArea,
+        owl:NamedIndividual .
+
+:BackCourtDriveStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Back-Court Drive" .
+
+:BackhandHitting a :HittingStyle,
+        owl:NamedIndividual ;
+    rdfs:label "Bankhand Hitting" .
+
+:ChallengeEvent a owl:Class ;
+    rdfs:label "Challenge Event" ;
+    rdfs:comment "A challenge event called by a player to challenge a judgement." ;
+    rdfs:subClassOf :Event .
+
+:ChangeCourtEvent a owl:Class ;
+    rdfs:label "Change-Court Event" ;
+    rdfs:comment "A change-court event can happen between sets, or after one player or one pair firstly wins 11 points." ;
+    rdfs:subClassOf :Event .
+
+:ClearStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Clear" .
+
+:CrossCourtNetStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Cross-Court Net" .
+
+:DefensiveClearStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Defensive Clear" .
+
+:DefensiveReturnDriveStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Defensive Return-Drive" .
+
+:Doctor a :AgentRole,
+        owl:NamedIndividual ;
+    rdfs:label "Doctor" .
+
+:Double a :MatchType,
+        owl:NamedIndividual .
+
+:DriveStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Drive" ;
+    owl:sameAs :FlickStroke .
+
+:DrivenFlightStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Driven Flight" .
+
+:DropStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Drop" .
+
+:EliminationEvent a owl:Class ;
+    rdfs:label "Elimination Event" ;
+    rdfs:comment "The event for the elimination stage at a tournament." ;
+    rdfs:subClassOf :Event .
+
+:EventInformation a owl:Class ;
+    rdfs:label "Event Information" ;
+    rdfs:comment "An information object captures relevant information of an event." ;
+    rdfs:subClassOf :InformationObject .
+
+:Finals a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :round-of-2 .
+
+:ForehandHitting a :HittingStyle,
+        owl:NamedIndividual ;
+    rdfs:label "Forehand Hitting" .
+
+:GameEvent a owl:Class ;
+    rdfs:label "Game Event" ;
+    rdfs:comment "A set (game) in a match." ;
+    rdfs:subClassOf :Event ;
+    owl:equivalentClass :SetEvent .
+
+:Group-Stage a :RoundRobinStage,
+        owl:NamedIndividual .
+
+:LiftStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Lift" ;
+    owl:sameAs :LobStroke .
+
+:LineJudge a :AgentRole,
+        owl:NamedIndividual ;
+    rdfs:label "Line Judge" .
+
+:LongServe a :Serve,
+        owl:NamedIndividual ;
+    rdfs:label "Long Serve" .
+
+:ManSingle a :MatchType,
+        owl:NamedIndividual .
+
+:MedicalPauseEvent a owl:Class ;
+    rdfs:label "Medical Pause Event" ;
+    rdfs:comment "A medical pause event can be asked by a player." ;
+    rdfs:subClassOf :Event .
+
+:MenDouble a :MatchType,
+        owl:NamedIndividual .
+
+:MixDouble a :MatchType,
+        owl:NamedIndividual .
+
+:NetPlayStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Net Play" .
+
+:OverHandArea a :HittingArea,
+        owl:NamedIndividual .
+
+:PassiveDropStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Passive Drop" .
+
+:PenaltyEvent a owl:Class ;
+    rdfs:label "Penalty Event" ;
+    rdfs:comment "A penalty event can be called by an umpire." ;
+    rdfs:subClassOf :Event .
+
+:PushStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Push" .
+
+:Quarter-finals a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :round-of-8 .
+
+:Racket a owl:Class ;
+    rdfs:label "Racket" ;
+    rdfs:subClassOf :Equipment ;
+    skos:definition "Rackets in badminton domain." .
+
+:ReturnNetStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Return Net" .
+
+:RoundHeadArea a :HittingArea,
+        owl:NamedIndividual .
+
+:RoundRobinGroupEvent a owl:Class ;
+    rdfs:label "Round Robin Group Event" ;
+    rdfs:comment "An event for a round-robin group at a tournament." ;
+    rdfs:subClassOf :Event .
+
+:RushStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Rush" .
+
+:Semi-finals a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :round-of-4 .
+
+:ServiceJudge a :AgentRole,
+        owl:NamedIndividual ;
+    rdfs:label "Service Judge" .
+
+:SetDateTimeDesciption a owl:Class ;
+    rdfs:subClassOf time:GeneralDateTimeDescription .
+
+:ShortServe a :Serve,
+        owl:NamedIndividual ;
+    rdfs:label "Short Serve" .
+
+:SideHandArea a :HittingArea,
+        owl:NamedIndividual .
+
+:Single a :MatchType,
+        owl:NamedIndividual .
+
+:SlashRoute a :ShuttleRoute,
+        owl:NamedIndividual ;
+    rdfs:label "Slash Route" .
+
+:SmashStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Smash" .
+
+:StraightRoute a :ShuttleRoute,
+        owl:NamedIndividual ;
+    rdfs:label "Stright Route" .
+
+:SudirmanCupCompetition a owl:Class ;
+    rdfs:label "Sudirman Cup Competition" ;
+    rdfs:comment "Mixed team competition organized by BWF.",
+        "https://en.wikipedia.org/wiki/Sudirman_Cup" ;
+    rdfs:subClassOf :BWFTeamCompetition .
+
+:SummerOlymipicsCompetition a owl:Class ;
+    rdfs:label "Summer Olympics Competition" ;
+    rdfs:comment "A badminton competition in a summer olympics." ;
+    rdfs:subClassOf :Competition .
+
+:ThomasCupCompetition a owl:Class ;
+    rdfs:label "Thomas Cup Competition" ;
+    rdfs:comment "Men team competition organized by BWF.",
+        "https://en.wikipedia.org/wiki/Thomas_Cup" ;
+    rdfs:subClassOf :BWFTeamCompetition .
+
+:UberCupCompetition a owl:Class ;
+    rdfs:label "Uber Cup Competition" ;
+    rdfs:comment "Women team competition organized by BWF.",
+        "https://en.wikipedia.org/wiki/Uber_Cup" ;
+    rdfs:subClassOf :BWFTeamCompetition .
+
+:Umpire a :AgentRole,
+        owl:NamedIndividual ;
+    rdfs:label "Umpire" .
+
+:UnderHandArea a :HittingArea,
+        owl:NamedIndividual .
+
+:WithdrawalEvent a owl:Class ;
+    rdfs:label "Withdrawal Event" ;
+    rdfs:comment "A withdrawal event can be called by a player/pair during/before a match." ;
+    rdfs:subClassOf :Event .
+
+:WomanSingle a :MatchType,
+        owl:NamedIndividual .
+
+:WomenDouble a :MatchType,
+        owl:NamedIndividual .
+
+:WristSmashStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Wrist Smash" .
+
+:belongToCountry a owl:DatatypeProperty ;
+    rdfs:label "belong to country" ;
+    rdfs:comment "ISO (3166) country code" ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:string .
+
+:currentWorldRanking a owl:DatatypeProperty ;
+    rdfs:label "current working ranking" ;
+    rdfs:comment "The current world ranking of a player/pair." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Pair :Player ) ] ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:double_player_a a :DoublePlayerRole,
+        owl:NamedIndividual ;
+    rdfs:label "Double Player A" ;
+    rdfs:comment "Double-player role in Pair A" .
+
+:double_player_b a :DoublePlayerRole,
+        owl:NamedIndividual ;
+    rdfs:label "Double Player B" ;
+    rdfs:comment "Double-player role in Pair A" .
+
+:double_player_c a :DoublePlayerRole,
+        owl:NamedIndividual ;
+    rdfs:label "Double Player C" ;
+    rdfs:comment "Double-player role in Pair B" .
+
+:double_player_d a :DoublePlayerRole,
+        owl:NamedIndividual ;
+    rdfs:label "Double Player D" ;
+    rdfs:comment "Double-player role in Pair B" .
+
+:eighth-finals a :EliminationStage,
+        owl:NamedIndividual .
+
+:getPointByTeam a owl:ObjectProperty ;
+    rdfs:range :Team ;
+    rdfs:subPropertyOf :winBy .
+
+:hasDraw a owl:ObjectProperty ;
+    rdfs:label "has draw" ;
+    rdfs:comment "hasDraw represents that a particular competition can have different draws (e.g., man single, men doubble, woman single, women double and mix double)." ;
+    rdfs:domain :Competition ;
+    rdfs:range :Draw .
+
+:highestWorldRanking a owl:DatatypeProperty ;
+    rdfs:label "highest world ranking" ;
+    rdfs:comment "The highest world ranking of a player/pair." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Pair :Player ) ] ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:inStage a owl:ObjectProperty ;
+    rdfs:domain :MatchInformation ;
+    rdfs:range :TournamentStage .
+
+:pair_a a :PairPlayersRole,
+        owl:NamedIndividual ;
+    rdfs:label "Pair A" ;
+    rdfs:comment "Pair-players role as pair A" .
+
+:pair_b a :PairPlayersRole,
+        owl:NamedIndividual ;
+    rdfs:label "Pair B" ;
+    rdfs:comment "Pair-players role as pair B" .
+
+:personFullName a owl:DatatypeProperty ;
+    rdfs:label "person full name" ;
+    rdfs:comment "The full name of a person." ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:string .
+
+:playerAge a owl:DatatypeProperty ;
+    rdfs:label "player age" ;
+    rdfs:comment "The age of a player." ;
+    rdfs:domain :Player ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:playerHeight a owl:DatatypeProperty ;
+    rdfs:label "player height" ;
+    rdfs:comment "The height of a player." ;
+    rdfs:domain :Player ;
+    rdfs:range xsd:double .
+
+:relatesToCompetition a owl:ObjectProperty ;
+    rdfs:label "relates to competition" ;
+    rdfs:comment "relatesToCompetition represents the type of competition for a competition event." ;
+    rdfs:domain :CompetitionEvent ;
+    rdfs:range :Competition .
+
+:round-of-128 a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :sixty-fourth-finals .
+
+:round-of-16 a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :sixteenth-finals .
+
+:round-of-64 a :EliminationStage,
+        owl:NamedIndividual ;
+    owl:sameAs :thirty-second-finals .
+
+:rr-round1 a :RoundRobinStage,
+        owl:NamedIndividual .
+
+:rr-round2 a :RoundRobinStage,
+        owl:NamedIndividual .
+
+:rr-round3 a :RoundRobinStage,
+        owl:NamedIndividual .
+
+:rr-round4 a :RoundRobinStage,
+        owl:NamedIndividual .
+
+:setNumber a owl:DatatypeProperty ;
+    rdfs:domain :MatchInformation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:CompetitionEvent a owl:Class ;
+    rdfs:label "Competition Event" ;
+    rdfs:comment "A competition event takes place in period of time, composing different draws and matches." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSubEvent ;
+            owl:someValuesFrom :MatchEvent ],
+        :Event .
+
+:Draw a owl:Class ;
+    rdfs:label "Draw" ;
+    rdfs:comment "The different match types in badminton (i.e., man single, men double, woman single, women double and mix double)." ;
+    owl:equivalentClass :MatchType .
+
+:Equipment a owl:Class ;
+    rdfs:label "Equipment" ;
+    rdfs:comment "Equipments in badmintion domain." .
+
+:FlickStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Flick" .
+
+:GetPointEvent a owl:Class ;
+    rdfs:label "Get-Point Event" ;
+    rdfs:comment "A get-point event is as the last sub-event in a rally event." ;
+    rdfs:subClassOf :Event .
+
+:LobStroke a :Stroke,
+        owl:NamedIndividual ;
+    rdfs:label "Lob" .
+
+:MatchDateTimeDescription a owl:Class ;
+    rdfs:subClassOf time:GeneralDateTimeDescription .
+
+:MatchDurationDescription a owl:Class ;
+    rdfs:label "Match Duration Description" ;
+    rdfs:comment "To describe a match duration." ;
+    rdfs:subClassOf time:DurationDescription .
+
+:MatchTimeEntity a owl:Class ;
+    rdfs:label "Match Time Entity" ;
+    rdfs:comment "Temporal entity for a match." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass time:Instant ;
+            owl:onProperty time:hasBeginning ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :MatchDurationDescription ;
+            owl:onProperty time:hasDurationDescription ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass time:Instant ;
+            owl:onProperty time:hasEnd ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :MatchDateTimeDescription ;
+            owl:onProperty time:inDateTime ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        time:TemporalEntity .
+
+:RallyEvent a owl:Class ;
+    rdfs:label "Rally Event" ;
+    rdfs:comment "A rally event starts with a serve and ends until one of the two players/pairs wins the point." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isDescribedBy ;
+            owl:someValuesFrom :RallyInformation ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass :StrokeEvent ;
+            owl:onProperty :hasSubEvent ],
+        [ a owl:Restriction ;
+            owl:onClass :GetPointEvent ;
+            owl:onProperty :hasSubEvent ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :Event .
+
+:RestEvent a owl:Class ;
+    rdfs:label "Rest Event" ;
+    rdfs:comment "A rest event can happen in between sets and after one of the two players/pairs firstly wins 11 points in a set." ;
+    rdfs:subClassOf :Event .
+
+:SetDurationDescription a owl:Class ;
+    rdfs:label "Set Duration Description" ;
+    rdfs:comment "To description a set." ;
+    rdfs:subClassOf time:DurationDescription .
+
+:SetTimeEntity a owl:Class ;
+    rdfs:label "Set Time Entity" ;
+    rdfs:comment "Temporal entity for a set." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass time:Instant ;
+            owl:onProperty time:hasBeginning ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :SetDurationDescription ;
+            owl:onProperty time:hasDurationDescription ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass time:Instant ;
+            owl:onProperty time:hasEnd ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        time:TemporalEntity .
+
+:StrokeEvent a owl:Class ;
+    rdfs:label "Stroke Event" ;
+    rdfs:comment "A stroke event is about a player hitting a shuttle." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isDescribedBy ;
+            owl:someValuesFrom :PlayerInformation ],
+        [ a owl:Restriction ;
+            owl:onClass :ShotInformation ;
+            owl:onProperty :isDescribedBy ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :Event .
+
+:eliminationPlayer a owl:ObjectProperty ;
+    rdfs:comment "elimination player",
+        "eliminationPlayer represents that a elimination tournament can have some players/pairs/teams." ;
+    rdfs:domain :EliminationInformation ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( :Pair :Player :Team ) ] ;
+    rdfs:subPropertyOf :hasPlayer .
+
+:eliminationStage a owl:ObjectProperty ;
+    rdfs:comment "eliminationStage represents in which stage that an elimination play is." ;
+    rdfs:domain :EliminationInformation ;
+    rdfs:range :EliminationStage ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:getPointByPair a owl:ObjectProperty ;
+    rdfs:range :Pair ;
+    rdfs:subPropertyOf :winBy .
+
+:getPointByPlayer a owl:ObjectProperty ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :winBy .
+
+:getSetByPair a owl:ObjectProperty ;
+    rdfs:range :Pair ;
+    rdfs:subPropertyOf :winBy .
+
+:getSetByPlayer a owl:ObjectProperty ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :winBy .
+
+:hasMatchType a owl:ObjectProperty ;
+    rdfs:label "has match type" ;
+    rdfs:comment "hasMatchType represents that the match type is captured by a match-information object." ;
+    rdfs:domain :MatchInformation ;
+    rdfs:range :MatchType ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:hasRoleA a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :MatchInformation :SetInformation :ShotInformation ) ] ;
+    rdfs:range :SinglePlayerRole ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:hasRoleB a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :MatchInformation :SetInformation :ShotInformation ) ] ;
+    rdfs:range :SinglePlayerRole ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:hittingPlayer a owl:ObjectProperty ;
+    rdfs:label "hitting player" ;
+    rdfs:comment "hittingPlayer represents that the player who hits a shot is captured by a shot-information object." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :hasPlayer .
+
+:inCompetition a owl:DatatypeProperty ;
+    rdfs:domain :Competition ;
+    rdfs:range xsd:string .
+
+:matchScoreA a owl:DatatypeProperty ;
+    rdfs:label "match score A" ;
+    rdfs:comment "The match score of player/pair A." ;
+    rdfs:domain :MatchInformation ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:matchScoreB a owl:DatatypeProperty ;
+    rdfs:label "match score B" ;
+    rdfs:comment "The match score of player/pair B." ;
+    rdfs:domain :MatchInformation ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:playerLocation a owl:ObjectProperty ;
+    rdfs:label "player location" ;
+    rdfs:comment "playerLocation represents that a player's location is captured by a player-information object." ;
+    rdfs:domain :PlayerInformation ;
+    rdfs:range :PlayerLocation ;
+    rdfs:subPropertyOf :hasLocation .
+
+:rallyLoseReason a owl:DatatypeProperty ;
+    rdfs:label "rally lose reason" ;
+    rdfs:comment "The lose reason of a rally." ;
+    rdfs:domain :RallyInformation ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:rallyWinReason a owl:DatatypeProperty ;
+    rdfs:label "rally win reason" ;
+    rdfs:comment "The win reason of a rally." ;
+    rdfs:domain :RallyInformation ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:receivingPlayer a owl:ObjectProperty ;
+    rdfs:label "receiving player" ;
+    rdfs:comment "receivingPlayer represents that the player who will receive a shot is captured by a shot-information object." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :hasPlayer .
+
+:round-of-2 a :EliminationStage,
+        owl:NamedIndividual .
+
+:round-of-4 a :EliminationStage,
+        owl:NamedIndividual .
+
+:round-of-8 a :EliminationStage,
+        owl:NamedIndividual .
+
+:roundRobinGroup a owl:DatatypeProperty ;
+    rdfs:label "round robin group" ;
+    rdfs:comment "round-robin group number." ;
+    rdfs:domain :RoundRobinGroupInformation ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:roundRobinGroupStage a owl:ObjectProperty ;
+    rdfs:comment "roundRobinGroupStage represents in which stage that a round-robin play is." ;
+    rdfs:domain :RoundRobinGroupInformation ;
+    rdfs:range :RoundRobinStage ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:roundRobinPlayer a owl:ObjectProperty ;
+    rdfs:label "round robin player" ;
+    rdfs:comment "roundRobinPlayer represents that a group in a round robin tournament can have some players/pairs/teams." ;
+    rdfs:domain :RoundRobinGroupInformation ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( :Pair :Player :Team ) ] ;
+    rdfs:subPropertyOf :hasPlayer .
+
+:setScoreA a owl:DatatypeProperty ;
+    rdfs:label "set score A" ;
+    rdfs:comment "The set score of player/pair A." ;
+    rdfs:domain :SetInformation ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:setScoreB a owl:DatatypeProperty ;
+    rdfs:label "set score B" ;
+    rdfs:comment "The set score of player/pair B." ;
+    rdfs:domain :SetInformation ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:shotNumber a owl:DatatypeProperty ;
+    rdfs:label "shot number" ;
+    rdfs:comment "The number of shots in a rally." ;
+    rdfs:domain :RallyInformation ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:shuttleHitLocation a owl:ObjectProperty ;
+    rdfs:label "shuttle hit location" ;
+    rdfs:comment "shuttleHitLocation represents that a shuttle's hit location is captured by a shot-information object." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :ShuttleLocation ;
+    rdfs:subPropertyOf :hasLocation .
+
+:shuttleLandingLocation a owl:ObjectProperty ;
+    rdfs:label "shuttle landing location" ;
+    rdfs:comment "shuttleLandingLocation represents that a shuttle's landing location is captured by a shot-information object." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :ShuttleLocation ;
+    rdfs:subPropertyOf :hasLocation .
+
+:sixteenth-finals a :EliminationStage,
+        owl:NamedIndividual .
+
+:sixty-fourth-finals a :EliminationStage,
+        owl:NamedIndividual .
+
+:thirty-second-finals a :EliminationStage,
+        owl:NamedIndividual .
+
+:winByPair a owl:ObjectProperty ;
+    rdfs:range :Pair ;
+    rdfs:subPropertyOf :winBy .
+
+:winByPlayer a owl:ObjectProperty ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :winBy .
+
+geo:asWKT a owl:DatatypeProperty ;
+    rdfs:comment "The WKT serialization of a Geometry." ;
+    rdfs:domain :Geometry ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal> ;
+    rdfs:range geo:wktLiteral .
+
+:Geometry a owl:Class ;
+    rdfs:label "Geometry" ;
+    rdfs:comment "http://www.opengis.net/ont/geosparql#Geometry" ;
+    skos:definition "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS)." .
+
+:MatchEvent a owl:Class ;
+    rdfs:label "Match Event" ;
+    rdfs:comment "A match event is participated by two single players or two pairs, and contains 3 sets at most." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSubEvent ;
+            owl:someValuesFrom :SetEvent ],
+        [ a owl:Restriction ;
+            owl:onProperty :isDescribedBy ;
+            owl:someValuesFrom :MatchInformation ],
+        [ a owl:Restriction ;
+            owl:onClass :MatchTimeEntity ;
+            owl:onProperty :occursAtTime ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :Event .
+
+:PairPlayersRole a owl:Class ;
+    rdfs:label "Pair-Player Role" ;
+    rdfs:comment "A role that a pair of two players takes in a match." ;
+    rdfs:subClassOf :PlayerRole .
+
+:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person agent can have some roles." ;
+    rdfs:subClassOf foaf:Agent .
+
+:Serve a owl:Class ;
+    rdfs:label "Serve" ;
+    rdfs:comment "A serve is always played by a player as a start of a rally." ;
+    rdfs:subClassOf :ShotType .
+
+:SetEvent a owl:Class ;
+    rdfs:label "Set Event" ;
+    rdfs:comment "A set event is with in a match and ends after the one player/pair wins 21 points and wins by 2 points at least." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSubEvent ;
+            owl:someValuesFrom :RallyEvent ],
+        [ a owl:Restriction ;
+            owl:onProperty :isDescribedBy ;
+            owl:someValuesFrom :SetInformation ],
+        [ a owl:Restriction ;
+            owl:onClass :RestEvent ;
+            owl:onProperty :hasSubEvent ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :MatchEvent ;
+            owl:onProperty :hasSuperEvent ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :SetTimeEntity ;
+            owl:onProperty :occursAtTime ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :Event .
+
+:SinglePlayerRole a owl:Class ;
+    rdfs:label "Single Player Role" ;
+    rdfs:comment "A role that a player takes in a single match." ;
+    rdfs:subClassOf :PlayerRole .
+
+:atCourtArea a owl:ObjectProperty ;
+    rdfs:label "at court area" ;
+    rdfs:comment "atCourtArea is to represent the location of a player/shuttle at a specific court area." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :PlayerLocation :ShuttleLocation ) ] ;
+    rdfs:range :CourtArea .
+
+:hasAgentRole a owl:ObjectProperty ;
+    rdfs:label "has agent role" ;
+    rdfs:comment "hasAgentRole represents that an event can have some agents playing specific roles." ;
+    rdfs:domain :Event ;
+    rdfs:range :AgentRole .
+
+:hasHittingArea a owl:ObjectProperty ;
+    rdfs:label "has hitting area" ;
+    rdfs:comment "hasHittingArea represents that a shot is hit at a particular area in terms of the player." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :HittingArea ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:hasHittingStyle a owl:ObjectProperty ;
+    rdfs:label "has hitting style" ;
+    rdfs:comment "hasHittingStyle represents that if a shuttle is hit backhand or forehand by a player." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :HittingStyle ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:hasRoute a owl:ObjectProperty ;
+    rdfs:label "has route" ;
+    rdfs:comment "hasRoute represents that the route of a shuttle after hitting." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :ShuttleRoute ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:hasShotType a owl:ObjectProperty ;
+    rdfs:label "has shot type" ;
+    rdfs:comment "hasShotType represents that the shot type is captured by a shot-information object." ;
+    rdfs:domain :ShotInformation ;
+    rdfs:range :ShotType ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:hasSuperEvent a owl:ObjectProperty ;
+    rdfs:label "has super-event" ;
+    rdfs:comment "hasSuperEvent represents that an event can have another event as a super-event." ;
+    rdfs:domain :Event ;
+    rdfs:range :Event .
+
+:occursAtLocation a owl:ObjectProperty ;
+    rdfs:label "occurs at location" ;
+    rdfs:comment "occursAtLocation represents that an event takes place at a location." ;
+    rdfs:domain :Event ;
+    rdfs:range :Location .
+
+:playedBy a owl:ObjectProperty ;
+    rdfs:comment "played By",
+        "playedBy represents that a player role is performed by a player." ;
+    rdfs:domain :PlayerRole ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :isPerformedBy .
+
+:qualifiedPlayer a owl:ObjectProperty ;
+    rdfs:label "qualified player" ;
+    rdfs:comment "The players/pairs/teams are qualified in a round-robin group or elimination stage." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :EliminationInformation :RoundRobinGroupInformation ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( :Pair :Player :Team ) ] ;
+    rdfs:subPropertyOf :hasPlayer .
+
+:roundScoreA a owl:DatatypeProperty ;
+    rdfs:label "round score A" ;
+    rdfs:comment "The set score of player/pair A." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :RallyInformation :ShotInformation ) ] ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+:roundScoreB a owl:DatatypeProperty ;
+    rdfs:label "round score B" ;
+    rdfs:comment "The round score of player/pair B." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :RallyInformation :ShotInformation ) ] ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf :hasInformationValue .
+
+geo:wktLiteral a rdfs:Datatype ;
+    rdfs:comment "A Well-known Text serialization of a Geometry object." .
+
+:BWFTeamCompetition a owl:Class ;
+    rdfs:label "BWF Team Competition" ;
+    rdfs:comment "Team competitions organized by the Badminton World Federation (BWF)." ;
+    rdfs:subClassOf :Competition .
+
+:EliminationInformation a owl:Class ;
+    rdfs:label "Elimination Information" ;
+    rdfs:comment "An information object captures relevant information of the elimination tournament stage." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :eliminationPlayer ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Pair :Player :Team ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :qualifiedPlayer ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Pair :Player :Team ) ] ],
+        [ a owl:Restriction ;
+            owl:onClass :EliminationStage ;
+            owl:onProperty :eliminationStage ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:PlayerInformation a owl:Class ;
+    rdfs:label "Player Information" ;
+    rdfs:comment "An information object captures relevant information of a player." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :Player ;
+            owl:onProperty :hasPlayer ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :PlayerLocation ;
+            owl:onProperty :playerLocation ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:PlayerLocation a owl:Class ;
+    rdfs:label "Player Location" ;
+    rdfs:comment "The location of a player." ;
+    rdfs:subClassOf :Location .
+
+:TournamentStage a owl:Class ;
+    rdfs:label "Tournament Stage" ;
+    rdfs:comment "Round-Robin stage or Elimination stage." .
+
+:hasLocation a owl:ObjectProperty ;
+    rdfs:comment "has Location",
+        "hasLocation represents that some entities can associate with locations." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :PlayerInformation :ShotInformation ) ] ;
+    rdfs:range :Location ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:isPerformedBy a owl:ObjectProperty ;
+    rdfs:label "is performed by" ;
+    rdfs:comment "isPerformedBy represents that an agent role is performed by an agent." ;
+    rdfs:domain :AgentRole ;
+    rdfs:range foaf:Agent .
+
+:DoublePlayerRole a owl:Class ;
+    rdfs:label "Double Player Role" ;
+    rdfs:comment "A role that a player takes in a double match." ;
+    rdfs:subClassOf :PlayerRole .
+
+:RoundRobinGroupInformation a owl:Class ;
+    rdfs:label "Round Robin Information" ;
+    rdfs:comment "An information object captures relevant information of a round-robin group." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :qualifiedPlayer ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Pair :Player :Team ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :roundRobinPlayer ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Pair :Player :Team ) ] ],
+        [ a owl:Restriction ;
+            owl:onClass :RoundRobinStage ;
+            owl:onProperty :roundRobinGroupStage ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty :roundRobinGroup ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:occursAtTime a owl:ObjectProperty ;
+    rdfs:label "occurs at time" ;
+    rdfs:comment "occursAtTime represents that an event takes place at a time." ;
+    rdfs:domain :Event ;
+    rdfs:range time:TemporalEntity .
+
+:HittingStyle a owl:Class ;
+    rdfs:label "Hittting Style" ;
+    rdfs:comment "A hitting style indicates if a shot is hit backhand or forehand." .
+
+:SetInformation a owl:Class ;
+    rdfs:label "Set Information" ;
+    rdfs:comment "An information object captures relevant information of a set." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( [ a owl:Restriction ;
+                        owl:onClass :Pair ;
+                        owl:onProperty :getSetByPair ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] [ a owl:Restriction ;
+                        owl:onClass :Player ;
+                        owl:onProperty :getSetByPlayer ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ) ],
+        [ a owl:Restriction ;
+            owl:onClass :PlayerRole ;
+            owl:onProperty :hasRoleA ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :PlayerRole ;
+            owl:onProperty :hasRoleB ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :setScoreA ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :setScoreB ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:ShotType a owl:Class ;
+    rdfs:label "Shot Type" ;
+    rdfs:comment "A shot can be classfied as a server or a specific stroke." .
+
+:ShuttleLocation a owl:Class ;
+    rdfs:label "Shuttle Location" ;
+    rdfs:comment "The location of a shuttle." ;
+    rdfs:subClassOf :Location .
+
+:ShuttleRoute a owl:Class ;
+    rdfs:label "Shuttle Route" ;
+    rdfs:comment "The route of the shuttle after a play hitting a shuttle." .
+
+:Competition a owl:Class ;
+    rdfs:label "Competition" ;
+    rdfs:comment "Different Competition Types in badminton." .
+
+:PlayerRole a owl:Class ;
+    rdfs:label "Player Role" ;
+    rdfs:comment "A role that a player takes in a match." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :playedBy ;
+                        owl:someValuesFrom :Player ] [ a owl:Restriction ;
+                        owl:allValuesFrom :Player ;
+                        owl:onProperty :playedBy ] ) ],
+        :AgentRole .
+
+:RallyInformation a owl:Class ;
+    rdfs:label "Rally Information" ;
+    rdfs:comment "An information object captures relevant information of a rally." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( [ a owl:Restriction ;
+                        owl:onClass :Pair ;
+                        owl:onProperty :getPointByPair ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] [ a owl:Restriction ;
+                        owl:onClass :Player ;
+                        owl:onProperty :getPointByPlayer ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ) ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty :rallyLoseReason ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty :rallyWinReason ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :roundScoreA ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :roundScoreB ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :shotNumber ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:hasSubEvent a owl:ObjectProperty ;
+    rdfs:label "has sub-event" ;
+    rdfs:comment "hasSubEvent represents that an event can have another event as a sub-event." ;
+    rdfs:domain :Event ;
+    rdfs:range :Event ;
+    owl:inverseOf :hasSuperEvent .
+
+foaf:Agent a owl:Class ;
+    rdfs:label "Agent" ;
+    rdfs:comment "An agent (eg. person, group, software or physical artifact)." .
+
+:HittingArea a owl:Class ;
+    rdfs:label "Hitting Area" ;
+    rdfs:comment "The hitting area in terms of a player when the player hits a shuttle." .
+
+:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "The geometric location." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :atCourtArea ;
+                        owl:someValuesFrom :CourtArea ] [ a owl:Restriction ;
+                        owl:allValuesFrom :CourtArea ;
+                        owl:onProperty :atCourtArea ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty geo:asWKT ;
+            owl:someValuesFrom geo:wktLiteral ],
+        :Geometry .
+
+:RoundRobinStage a owl:Class ;
+    rdfs:label "Round Robin Stage",
+        "round-robin play." ;
+    rdfs:subClassOf :TournamentStage .
+
+:hasPlayer a owl:ObjectProperty ;
+    rdfs:label "has player" ;
+    rdfs:comment "hasPlayer represents that some entities can associate with players/pairs/teams." ;
+    rdfs:domain :InformationObject ;
+    rdfs:range :Player ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:isDescribedBy a owl:ObjectProperty ;
+    rdfs:label "is described by" ;
+    rdfs:comment "isDescribedBy represents that an event can be described an information object that captures relevant information." ;
+    rdfs:domain :Event ;
+    rdfs:range :InformationObject .
+
+:winBy a owl:ObjectProperty ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( :Pair :Player :Team ) ] ;
+    rdfs:subPropertyOf :isInformationAbout .
+
+:MatchInformation a owl:Class ;
+    rdfs:label "Match Information" ;
+    rdfs:comment "An information object captures relevant information of a match." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :matchScoreA ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :matchScoreB ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Class ;
+            owl:unionOf ( [ a owl:Restriction ;
+                        owl:onClass :Pair ;
+                        owl:onProperty :winByPair ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] [ a owl:Restriction ;
+                        owl:onClass :Player ;
+                        owl:onProperty :winByPlayer ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasPlayer ;
+            owl:someValuesFrom :Player ],
+        [ a owl:Restriction ;
+            owl:onClass :MatchType ;
+            owl:onProperty :hasMatchType ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty :inCompetition ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:AgentRole a owl:Class ;
+    rdfs:label "Agent Role" ;
+    rdfs:comment "A role that an agent can take in a specific context." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :isPerformedBy ;
+                        owl:someValuesFrom foaf:Agent ] [ a owl:Restriction ;
+                        owl:allValuesFrom foaf:Agent ;
+                        owl:onProperty :isPerformedBy ] ) ] .
+
+:Team a owl:Class ;
+    rdfs:label "Team" ;
+    rdfs:comment "A team in a team-baed competition." ;
+    rdfs:subClassOf foaf:Agent .
+
+:MatchType a owl:Class ;
+    rdfs:label "Match Type" ;
+    rdfs:comment "The different match types in badminton (i.e., man single, men double, woman single, women double and mix double)." .
+
+:hasInformationValue a owl:DatatypeProperty ;
+    rdfs:domain :InformationObject .
+
+:isInformationAbout a owl:ObjectProperty ;
+    rdfs:domain :InformationObject .
+
+:InformationObject a owl:Class ;
+    rdfs:label "Information Object" ;
+    rdfs:seeAlso "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject" .
+
+:ShotInformation a owl:Class ;
+    rdfs:label "Shot Information" ;
+    rdfs:comment "An information object captures relevant information of a shot." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasHittingArea ;
+                        owl:someValuesFrom :HittingArea ] [ a owl:Restriction ;
+                        owl:allValuesFrom :HittingArea ;
+                        owl:onProperty :hasHittingArea ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasHittingStyle ;
+                        owl:someValuesFrom :HittingStyle ] [ a owl:Restriction ;
+                        owl:allValuesFrom :HittingStyle ;
+                        owl:onProperty :hasHittingStyle ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasRoute ;
+                        owl:someValuesFrom :ShuttleRoute ] [ a owl:Restriction ;
+                        owl:allValuesFrom :ShuttleRoute ;
+                        owl:onProperty :hasRoute ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasShotType ;
+                        owl:someValuesFrom :ShotType ] [ a owl:Restriction ;
+                        owl:allValuesFrom :ShotType ;
+                        owl:onProperty :hasShotType ] ) ],
+        [ a owl:Restriction ;
+            owl:onClass :Player ;
+            owl:onProperty :hittingPlayer ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :Player ;
+            owl:onProperty :receivingPlayer ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :ShuttleLocation ;
+            owl:onProperty :shuttleHitLocation ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :ShuttleLocation ;
+            owl:onProperty :shuttleLandingLocation ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :roundScoreA ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:nonNegativeInteger ;
+            owl:onProperty :roundScoreB ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :InformationObject .
+
+:EliminationStage a owl:Class ;
+    rdfs:label "Elimination Stage" ;
+    rdfs:comment "Sudden-death play." ;
+    rdfs:subClassOf :TournamentStage .
+
+:Pair a owl:Class ;
+    rdfs:label "Pair" ;
+    rdfs:comment "Pairs in double plays (i.e., men double, women double and mix double)." ;
+    rdfs:subClassOf foaf:Agent .
+
+:Stroke a owl:Class ;
+    rdfs:label "Stroke" ;
+    rdfs:comment "A stroke is played a player after serving in a rally." ;
+    rdfs:subClassOf :ShotType .
+
+:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Activities that take place within a given context or timeframe." ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasAgentRole ;
+                        owl:someValuesFrom :AgentRole ] [ a owl:Restriction ;
+                        owl:allValuesFrom :AgentRole ;
+                        owl:onProperty :hasAgentRole ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :isDescribedBy ;
+                        owl:someValuesFrom :InformationObject ] [ a owl:Restriction ;
+                        owl:allValuesFrom :InformationObject ;
+                        owl:onProperty :isDescribedBy ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :occursAtLocation ;
+                        owl:someValuesFrom :Location ] [ a owl:Restriction ;
+                        owl:allValuesFrom :Location ;
+                        owl:onProperty :occursAtLocation ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :occursAtTime ;
+                        owl:someValuesFrom time:TemporalEntity ] [ a owl:Restriction ;
+                        owl:allValuesFrom time:TemporalEntity ;
+                        owl:onProperty :occursAtTime ] ) ] .
+
+:Player a owl:Class ;
+    rdfs:label "Player" ;
+    rdfs:comment "A player in badmintion related events." ;
+    rdfs:subClassOf :Person .
+
+:CourtArea a owl:Class ;
+    rdfs:label "Court Area" ;
+    rdfs:comment "A court area indicates a particular area in a court." .
+
